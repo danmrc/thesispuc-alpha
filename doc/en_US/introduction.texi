@@ -1,0 +1,95 @@
+@c -*- mode: texinfo; coding: utf-8 -*-
+@c This is part of the ThesisPUC User Manual
+@c Copyright (C)  2015 - 2020 PUC-Rio
+@c See the file ThesisPUC.texi for copying conditions.
+
+
+@node Introduction
+@chapter Introduction
+
+
+ThesisPUC is a @uref{http://en.wikipedia.org/wiki/LaTeX, @LaTeX{}}
+document class for the @uref{http://en.wikipedia.org/wiki/.tex, @TeX{}}
+document production system.
+
+
+@menu
+* Obtaining and Installing ThesisPUC::
+* Reporting Bugs::
+@end menu
+
+
+@node Obtaining and Installing ThesisPUC
+@section Obtaining and Installing ThesisPUC
+
+The ThesisPUC latex document class is distributed as a @strong{zip}
+file, named @strong{ThesisPUC.zip}.  You may obtain the latest version
+and its @emph{User Manual} @uref{@value{UTHESISPUC-RELEASES}, here}.
+
+@menu
+* Dependencies::
+* Quickstart::
+@end menu
+
+
+@node Dependencies
+@subsection Dependencies
+
+@LaTeX{}2e is the current version of @LaTeX{}, available on most
+operating systems.  There are numerous free and commercial
+implementations of the entire @TeX{} system.  PUC-Rio recommends:
+
+@itemize @bullet
+@item
+@uref{http://www.tug.org/texlive/, Texlive}
+@end itemize
+
+In order to locally compile the documentation, you also need:
+
+@itemize @bullet
+@item
+@uref{https://www.gnu.org/software/texinfo/, Texinfo} >= 5.2
+@end itemize
+
+
+@node Quickstart
+@subsection Quickstart
+
+Assuming you have satisfied the dependencies and downloaded the latest
+@strong{ThesisPUC.zip} (@pxref{Obtaining and Installing ThesisPUC}),
+then:
+
+@itemize @bullet
+@item
+create a folder where you plan to develop your thesis
+@item
+drop the @strong{ThesisPUC.zip} archive in it
+@item
+unzip @strong{ThesisPUC.zip} in that folder
+@end itemize
+
+You should see the following list of files and directories:
+
+@example
+atbeginend.sty
+doc/
+examples/
+NEWS		[ new, since version 1.0.3 ]
+puc.png
+ThesisPUC.bst
+ThesisPUC.cls
+ThesisPUC.zip
+@end example
+
+If you wish to, you may now remove the @strong{ThesisPUC.zip}.
+
+It is highly recommended for users who upgrade from a previous ThesisPUC
+version to carefully read the NEWS file, and apply the necessary changes
+when applicable.
+
+
+@node Reporting Bugs
+@section Reporting Bugs
+
+Please send your questions, bug reports and/or requests for improvements
+to @email{david at altosw dot be}.

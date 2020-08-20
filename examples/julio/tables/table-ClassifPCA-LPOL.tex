@@ -1,0 +1,72 @@
+% -*- coding: utf-8; -*-
+
+\begin{table} [!h]
+ \begin{center}  \footnotesize
+  \caption{Classificação das classes, nas imagens LPOL segmentadas pelo método CRM, usando PCA de 5 componentes.} \label{tab:ClassifPCA-LPOL}
+  ~\\[-1mm]
+   \begin{tabularx}
+     {\textwidth}
+     { p{3.5cm}
+       p{2cm}
+       @{\extracolsep{5mm}}n{5}{1}
+       @{\extracolsep{6mm}}n{6}{1}
+       @{\extracolsep{5mm}}n{7}{1} }
+
+   \textbf{\textbf{\mrcel {~~Técnicas de}{~~Validação}}}
+   & \textbf{~Classes}
+   & \textbf{\textbf{\mrcel {~Linear}{~~TA(\%)$^\dag$}}}
+   & \textbf{\textbf{\mrcel {Quadrático}{~~TA(\%)}}}
+   & \textbf{\textbf{\mrcel {Mahalanobis}{~~TA(\%)}}} \\ \toprule
+
+   ~\\[-2mm]
+   \multirow{4}{*}{Autovalidação} 
+   & Granular
+   & 98.59
+   & 95.13
+   & 94.63 \\ 
+      
+   ~
+   & Lamelar
+   & 96.12
+   & 98.01
+   & 96.70 \\
+   
+   ~   
+   & Lobular
+   & 96.81
+   & 98.63
+   & 99.54 \\
+   
+   ~   
+   & Global
+   & 97.17
+   & 97.26
+   & 96.96 \\ \midrule     
+   
+   \multirow{4}{*}{Validação Cruzada} 
+   & Granular
+   & 98.49
+   & 95.00
+   & 94.55 \\ 
+      
+   ~
+   & Lamelar
+   & 95.99
+   & 97.93
+   & 96.55 \\
+   
+   ~   
+   & Lobular
+   & 96.71
+   & 98.60
+   & 99.50 \\   
+   
+   ~   
+   & Global
+   & 97.06
+   & 97.18
+   & 96.87 \\ \midrule    
+   \end{tabularx}
+ \end{center}
+ {$^\dag$ \scriptsize TA(\%): Taxas de Acerto em \%.}
+\end{table}

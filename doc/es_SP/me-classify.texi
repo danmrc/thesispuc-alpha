@@ -1,0 +1,84 @@
+
+@deffn comando me-classify [OPTION]...
+me-classify (Measure-Classify) ou (Mede-Classifica).
+
+Esta rotina identifica automaticamente o Grau de Maturação de Pelotas.
+
+Executa o comando na pasta local ou pasta destino (target
+@var{DIRECTORY}).
+
+O diretório deve conter os arquivos gerados pelo script Relat Pelota,
+executado na máquina Windows com o programa AxioVision. São 9 arquivos
+que devem ter os seguintes nomes (fixos):
+
+@itemize @bullet
+@item
+mosaico-completo.tif
+
+@item
+mosaico-diametral.tif
+
+@item
+casca.tif
+
+@item
+manto-externo.tif
+
+@item
+manto-interno.tif
+
+@item
+nucleo.tif
+
+@item
+distribuicao-poros.tif
+
+@item
+table-1.csv
+
+@item
+title.csv
+@end itemize
+
+Os argumentos em @var{OPTION} podem conter os seguintes parâmetros:
+
+@table @code
+@item -l, --dot-lindex
+Opção reservada para programadores, usuários podem desconsiderá-la.
+
+@item -r, --recursive
+Executa me-classify de forma recursiva, em todos os diretórios e sub
+diretórios.
+
+@item -t,--target-directory=@var{DIRECTORY}
+Analisa as imagens contidas num diretório específico.
+
+@item -g,--grey-levels=@var{NUMBER}
+Número de níveis de cinza na análise de textura. Valor default = 256.
+
+@item -o,--connectivity=@var{NUMBER}
+Conectividade (definição de contiguidade dos objetos). Valor default =
+8.
+
+@item -s,--threshold=@var{NUMBER}
+Limiar de segmentação do minério de ferro para a eliminação de outras
+fases (silicatos, poros, fundo etc.). Valor default = 0.5.
+
+@item -i,--scrap-inf=@var{NUMBER}
+Tamanho mínimo de partículas. Valor default = 100.
+
+@item -j,--scrap-inf-not=@var{NUMBER}
+Tamanho mínimo de poros. Valor default = 5.
+
+@item -u,--scrap-sup=@var{NUMBER}
+Tamanho máximo de poros. Valor default = 3000.
+
+@item --help
+Mostra esta janela de informação
+
+@item --version
+Mostra informação de versão do código
+
+
+@end table
+@end deffn

@@ -1,0 +1,303 @@
+%% -*- coding: utf-8; -*-
+
+%% \listfiles
+
+\documentclass[
+  doutorado,
+  brazilian,
+  numeric
+]{ThesisPUC}
+
+  %% \usepackage[brazilian]{babel}      %% in ThesisPUC.cls
+  %% \usepackage[utf8]{inputenc}        %% .
+  %% \usepackage[T1]{fontenc}           %% .
+  %% \usepackage{lmodern}               %% .
+  %% \usepackage[pdftex]{graphicx}	%% .
+
+  \usepackage{tabularx}
+  \usepackage{multirow}
+  \usepackage{multicol}
+  \usepackage{colortbl}
+  \usepackage[%
+    dvipsnames,
+    svgnames,
+    x11names,
+    fixpdftex
+  ]{xcolor}
+  \usepackage{numprint}
+  \usepackage{textcomp}
+  \usepackage{booktabs}
+  \usepackage{amsmath}
+  \usepackage{enumitem}
+  \usepackage{amssymb}
+  \usepackage{textcomp}
+
+%%% Other commands
+
+\newcommand{\Rset}{\mathbb{R}}
+\newcommand{\Zset}{\mathbb{Z}}
+
+\npthousandsep{}
+\npdecimalsign{,}
+
+\modotabelas{figtab} %% [nada, fig, tab ou figtab]
+%\modoabreviacoes{none} %% [none ou use] %% Default is [use]
+
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{3}
+
+
+%%%
+%%% My files
+%%%
+
+\input{defs}
+
+%%%
+%%% Titulos
+%%%
+
+\tituloglossario{Lista de Abreviaturas}
+
+\autor{Julio César Álvarez Iglesias}
+\autorR{Álvarez Iglesias, Julio César}
+
+\orientador{Sidnei Paciornik}{Prof.}
+\orientadorR{Paciornik, Sidnei}
+% Se o departamento do orientador for diferente do departamento do autor, descomente a linha seguinte e coloque o nome e sigla da instituicao do orientador.
+%\orientadorInst{nome da instituicao}{sigla}
+
+\coorientador{Otávio da Fonseca Martins Gomes}{Dr.}
+\coorientadorR{da Fonseca Martins Gomes, Otávio}
+\coorientadorInst{Centro de Tecnologia Mineral}{CETEM/MCTI}
+
+\titulo{Desenvolvimento de um sistema de microscopia digital para
+  classificação automática de tipos de hematita em minério de ferro}
+
+\titulouk{Development of a digital microscopy system for automatic
+  classification of hematite types in iron ore}
+
+%% \subtitulo{Aqui vai o subtitulo caso precise}
+
+\dia{9}
+\mes{Agosto}
+\ano{2012}
+
+\cidade{Rio de Janeiro}
+\CDD{620.11}
+\departamento{Engenharia Química e de Materiais}
+\programa{Engenharia de Materiais e de Processos Químicos e Metalúrgicos}
+\centro{Centro Técnico Científico}
+\universidade{Pontifícia Universidade Católica do Rio de Janeiro}
+\uni{PUC-Rio}
+
+%%%
+%%% Banca
+%%%
+
+\banca{%
+  \membrodabanca{Paulo Roberto Gomes Brandão}{Prof.}
+    {Universidade Federal de Minas Gerais}{UFMG}
+  \membrodabanca{Leonardo Evangelista Lagoeiro}{Prof.}
+    {Universidade Federal de Ouro Preto}{UFOP}
+  \membrodabanca{Reiner Neumann}{Dr.}
+    {Centro de Tecnologia Mineral}{CETEM/MCTI}
+  \membrodabanca{Marcos Henrique de Pinho Maurício}{Dr.}
+    {Departamento de Engenharia Química e de Materiais}{PUC-Rio}
+}
+
+%%%
+%%% Currículo
+%%%
+
+\curriculo{%
+  Graduou-se em Física pela Universidade da Havana (Havana,
+  Cuba). Fez mestrado no Departamento de Engenharia de Materiais da
+  PUC-Rio, especializando-se na área de microscopia digital,
+  processamento e análise digital de imagens. Desenvolveu um grande
+  número de rotinas de processamento digital de imagens para a
+  companhia Vale na identificação e caracterização de minério de ferro
+  assim como seus aglomerados.}
+
+%%%
+%%% Agradecimentos (LEMBRETE AOS ALUNOS BOLSISTAS. Não esqueçam de agradecer às agências ou órgãos de fomento à pesquisa que apoiaram a realização do seu trabalho.)
+%%%
+
+\agradecimentos{%
+  Em primeiro lugar, gostaria de agradecer especialmente a meu
+  orientador Prof. Sidnei Paciornik e coorientador Dr. Otávio
+  Gomes. Em particular, quero manifestar o meu apreço ao Sidnei que,
+  além de orientador, tem sido um amigo. Eu não tenho palavras para
+  expressar minha sincera gratidão a ele, mas eu me considero
+  afortunado por ter trabalhado com ele nos últimos seis anos; dois
+  deles durante o meu mestrado. Agradecimentos especiais ao meu
+  coorientador Otávio Gomes por ter me guiado durante esta caminhada
+  com seu extenso conhecimento e entusiasmo.
+
+  Eu tenho a sorte de ter a oportunidade de colaborar com colegas de
+  laboratório muito competentes que sem dúvida têm contribuído
+  significativamente para essa tesse. Eles também têm sido os
+  responsáveis por criar um ambiente agradável e estimulante para
+  trabalhar durante esses quatro anos de minha
+  pesquisa. Individualmente, gostaria de agradecer a Karen Augusto por
+  ter sacrificado longas horas na coleta de dados e análise de vários
+  resultados importantes para a minha tese, a David Pirotte pelo
+  suporte com as questões técnicas relacionadas ao uso do Latex, a
+  Debora Turon pelos momentos compartilhados e aprendizado dividido,
+  assim como a Luciana Carneiro.
+
+  Eu também devo muito a Maria Beatriz Vieira, nossa colaborada da
+  Vale, que gerenciou e nos permitiu o acesso a este desafiante
+  problema. Certamente contar com a sua colaboração foi decisiva para
+  o impacto e contribuição da minha tese no contexto da indústria
+  brasileira.
+
+  Agradeço ao CETEM/MCTI pela parceria e pelo apoio na aquisição e
+  processamento dos resultados usados nesta tese.
+
+  Também sou grato aos membros da minha banca examinadora, Prof. Paulo
+  Roberto Gomes Brandão, Prof. Leonardo Evangelista Lagoeiro,
+  Dr. Reiner Neumann e Dr. Marcos Henrique de Pinho Maurício, que
+  comprometeram muito generosamente seu tempo e conhecimento para
+  avaliar a minha tese.
+
+  Eu também gostaria de agradecer à minha esposa, por cada minuto de
+  amor, estímulo, paciência, encorajamento e força. A meus pais pelo
+  apoio, mesmo a muitos quilômetros de distância, que tem sido
+  essencial para encontrar forças e continuar lutando pelos meus
+  objetivos. Palavras não podem expressar a imensidão da gratidão que
+  tenho por eles. À minha família em geral pela força e confiança.
+
+  Por último, mas não menos importante, gostaria de agradecer à CAPES
+  pelo apoio financeiro e à PUC-Rio pela bolsa de isenção de
+  mensalidades do doutorado.}
+
+%%%
+%%% Prechaves
+%%%
+
+\catalogprekeywords{%
+  \catalogprekey{Engenharia Química}%
+  \catalogprekey{Engenharia de Materiais}%
+}
+
+%%%
+%%% Chaves
+%%%
+
+\chaves{%
+  \chave{Minério de Ferro}
+  \chave{Cristais de Hematita}
+  \chave{Microscopia Digital}
+  \chave{Análise de Imagens}
+  \chave{Classificação}
+  \chave{Microscopia de Luz Polarizada}
+}
+
+\chavesuk{%
+  \chave{Iron Ore}%
+  \chave{Hematite Crystals}%
+  \chave{Digital Microscopy}%
+  \chave{Image Analysis}%
+  \chave{Classification}%
+  \chave{Polarized Light Microscopy}%
+}
+
+%%%
+%%% Resumo
+%%%
+
+\resumo{%
+  O minério de ferro é um material policristalino oriundo de processos
+  naturais complexos durante tempos geológicos, que dão origem a
+  características intrínsecas e comportamento industrial variado.  A
+  grande maioria dos minérios de ferro brasileiros é essencialmente
+  hematítico. A hematita pode ser classificada como lobular, lamelar,
+  granular, microcristalina ou martita. Na indústria mineral, esta
+  caracterização é tradicionalmente realizada por operadores humanos a
+  partir da observação de amostras no microscópio ótico, sujeita a
+  grandes variações. Assim, é relevante desenvolver um procedimento
+  que permita a discriminação dos diferentes tipos de hematita e a
+  medida de características tais como o tamanho de cristal. Esta tese
+  propõe um sistema que mede e classifica automaticamente tipos
+  texturais de hematita baseado no processamento e na análise de
+  imagens de microscopia ótica, em campo claro, polarização linear e
+  polarização circular. Foram desenvolvidas rotinas para aquisição,
+  registro, segmentação, reconhecimento e análise morfológica de
+  cristais de hematita. A segmentação automática de cristais de
+  hematita foi baseada no cálculo da distância espectral, a fim de
+  controlar o crescimento de regiões partindo das sementes. Os
+  resultados da identificação dos cristais obtidos, tanto nas imagens
+  obtidas com polarização linear quanto com polarização circular,
+  foram muito promissores. Atributos de tamanho e forma dos cristais
+  identificados foram obtidos. Estes dados foram usados como conjunto
+  de treinamento para classificadores supervisionados, permitindo
+  reconhecer as classes de hematita granular, lamelar e lobular. Taxas
+  de acerto globais próximas a 98\% foram obtidas, tanto para
+  autovalidação, quanto para a validação cruzada.}
+
+\resumouk{%
+  Iron ore is a polycrystalline material created by complex natural
+  processes during geological periods, which give rise to intrinsic
+  characteristics and varied industrial behavior. The vast majority of
+  the Brazilian iron ores belong essentially to the hematitic
+  type. Hematite can be classified as lobular, lamelar, granular,
+  micro-crystalline or martite. In the mineral industry, the
+  characterization of iron ore and its agglomerates is traditionally
+  developed by human operators from the observation of samples under
+  the optical microscope, which may suffer large variations. Thus, it
+  is important to develop a procedure that allows the discrimination
+  of the different hematite types and the measurement of
+  characteristics such as crystal size. The present thesis proposes a
+  system for the automatic classification of hematite textural types,
+  based on digital processing and analysis of optical microscopy
+  images, in bright field, linear and circular polarized
+  light. Routines were developed for the acquisition, registration,
+  recognition and morphological analysis of hematite crystals. The
+  automatic segmentation of hematite crystals was based on calculating
+  the spectral distance, in order to control the region expansion from
+  the seeds. The results regarding the identification of the obtained
+  crystals were very promising. Size and shape attributes were
+  obtained and used as a training set for supervised classifiers,
+  leading to the recognition of granular, lamelar and lobular hematite
+  classes. Global success rates close to 98\% were obtained concerning
+  self-validation as well as crossed validation.}
+
+%%%
+%%% Epigrafe
+%%%
+
+%% \epigrafe{%
+%%   no epigrafe}
+%% \epigrafeautor{Wassily Kandinsky}
+%% \epigrafelivro{Regards sur le passé}
+
+%%%
+%%% Misc.
+%%%
+
+\usecolour{true}
+
+%%%
+%%% Hyphenation
+%%%
+
+\hyphenation{PON-TI-FÍ-CIA}
+
+%%%
+%%% 
+%%%
+
+\begin{document}
+
+  \input{chapter-1}
+  \input{chapter-2}
+  %% \input{chapter-3}
+  %% \input{chapter-4}
+  \input{chapter-5}
+  \arial
+  \bibliography{julio}
+  \normalfont
+  \input{chapter-7}
+
+\end{document}

@@ -1,0 +1,296 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<!-- This manual describes the use of the ThesisPUC latex document class to
+write phd or master thesis, as specified by the university
+PUC-RIO. Version 1.0.0.
+
+Copyright (C) 2015 PUC-Rio
+
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.3 or
+any later version published by the Free Software Foundation; with no
+Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.  A
+copy of the license is included in the section entitled "GNU Free
+Documentation License." -->
+<!-- Created by GNU Texinfo 5.2, http://www.gnu.org/software/texinfo/ -->
+<head>
+<title>ThesisPUC
+Latex Document Class, PUC-RIO
+User Manual: Lista de Comandos</title>
+
+<meta name="description" content="ThesisPUC
+Latex Document Class, PUC-RIO
+User Manual: Lista de Comandos">
+<meta name="keywords" content="ThesisPUC
+Latex Document Class, PUC-RIO
+User Manual: Lista de Comandos">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="index.html#Top" rel="start" title="Top">
+<link href="Indice-de-Conceitos.html#g_t_00cdndice-de-Conceitos" rel="index" title="Índice de Conceitos">
+<link href="index.html#Top" rel="up" title="Top">
+<link href="Indice-de-Conceitos.html#g_t_00cdndice-de-Conceitos" rel="next" title="Índice de Conceitos">
+<link href="Introducao.html#Introdu_00e7_00e3o" rel="prev" title="Introdução">
+<style type="text/css">
+<!--
+a.summary-letter {text-decoration: none}
+blockquote.smallquotation {font-size: smaller}
+div.display {margin-left: 3.2em}
+div.example {margin-left: 3.2em}
+div.indentedblock {margin-left: 3.2em}
+div.lisp {margin-left: 3.2em}
+div.smalldisplay {margin-left: 3.2em}
+div.smallexample {margin-left: 3.2em}
+div.smallindentedblock {margin-left: 3.2em; font-size: smaller}
+div.smalllisp {margin-left: 3.2em}
+kbd {font-style:oblique}
+pre.display {font-family: inherit}
+pre.format {font-family: inherit}
+pre.menu-comment {font-family: serif}
+pre.menu-preformatted {font-family: serif}
+pre.smalldisplay {font-family: inherit; font-size: smaller}
+pre.smallexample {font-size: smaller}
+pre.smallformat {font-family: inherit; font-size: smaller}
+pre.smalllisp {font-size: smaller}
+span.nocodebreak {white-space:nowrap}
+span.nolinebreak {white-space:nowrap}
+span.roman {font-family:serif; font-weight:normal}
+span.sansserif {font-family:sans-serif; font-weight:normal}
+ul.no-bullet {list-style: none}
+-->
+</style>
+
+
+</head>
+
+<body lang="en" bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#800080" alink="#FF0000">
+<a name="Lista-de-Comandos"></a>
+<div class="header">
+<p>
+Next: <a href="Indice-de-Conceitos.html#g_t_00cdndice-de-Conceitos" accesskey="n" rel="next">Índice de Conceitos</a>, Previous: <a href="Introducao.html#Introdu_00e7_00e3o" accesskey="p" rel="prev">Introdução</a>, Up: <a href="index.html#Top" accesskey="u" rel="up">Top</a> &nbsp; [<a href="Indice-de-Conceitos.html#g_t_00cdndice-de-Conceitos" title="Index" rel="index">Index</a>]</p>
+</div>
+<hr>
+<a name="Lista-de-Comandos-1"></a>
+<h2 class="chapter">2 Lista de Comandos</h2>
+
+<p>Neste capítulo são descritos os comandos para executar as rotinas,
+seus parâmetros e modo de usar.
+</p>
+
+<dl>
+<dt><a name="index-rg_002dergbd"></a>comando: <strong>rg-ergbd</strong> <em>[OPTION]... FORMAT</em></dt>
+<dd><p>rg-ergbd (Region Growing - euclidean RGB distance) ou (Crescimento de
+Regiões - Distância euclideana em cores RGB).
+</p>
+<p>Esta rotina identifica os tipos de Hematita em 5 classes: Martita,
+Microcristalina, Granular, Lamelar ou Lobular.
+</p>
+<p>Executa o comando na pasta local ou pasta destino (target
+<var>DIRECTORY</var>) sobre um par de imagens composto por uma imagem em
+campo claro (BF - Bright Field) e uma imagem em polarização circular
+(CPOL). Estas imagens devem ter extensão <var>FORMAT</var>.
+</p>
+<p>Os argumentos em <var>OPTION</var> podem conter os seguintes parâmetros:
+</p>
+<dl compact="compact">
+<dt><code>-l, --dot-lindex</code></dt>
+<dd><p>Opção reservada para programadores, usuários podem desconsiderá-la
+</p>
+</dd>
+<dt><code>-r, --recursive</code></dt>
+<dd><p>Executa rg-ergbd de forma recursiva, em todos os diretórios e sub
+diretórios...
+</p>
+</dd>
+<dt><code>-t, --target-directory=<var>DIRECTORY</var></code></dt>
+<dd><p>Analisa as imagens contidas num diretório específico
+</p>
+</dd>
+<dt><code>-s, --threshold=<var>NUMBER</var></code></dt>
+<dd><p>Limiar para separação dos grãos por diferença de cores entre sementes
+(Método Analítico). Valor default = 0.032. Este valor já foi
+identificado como ótimo sobre grandes mosaicos capturados no CTF.
+</p>
+</dd>
+<dt><code>-m, --segmentation-threshold=<var>NUMBER</var></code></dt>
+<dd><p>Limiar de segmentação das hematitas para eliminação de outras fases
+(goethita, quartzo etc.) (Método Sintético) Valor típico para imagens
+obtidas na Vale = 0,75 (equivale ao tom de corte de 0,75x256 = 192)
+</p>
+</dd>
+<dt><code>-n, --noise=<var>NUMBER</var></code></dt>
+<dd><p>Ruído acrescentado na imagem para a geração de sementes dos grãos
+(Método Analítico) Valor default = 0. O uso de ruído ≠0 gera muitas
+sementes e, apesar de poder melhorar a detecção de cristais, aumenta
+demais o tempo de processamento.
+</p>
+</dd>
+<dt><code>-c, --canny=<var>NUMBER</var></code></dt>
+<dd><p>Variável do método de Canny utilizado na detecção de bordas (Método
+Analítico). Valor default = 1.5. Este valor não deverá mudar.
+</p>
+</dd>
+<dt><code>-o, --connectivity=<var>NUMBER</var></code></dt>
+<dd><p>Conectividade (definição de contiguidade dos objetos). Valor default =
+4.  Não deverá ser alterado.
+</p>
+</dd>
+<dt><code>-i, --scrap-inf=<var>NUMBER</var></code></dt>
+<dd><p>Tamanho mínimo de partículas de hematita (Método Sintético). Valor
+default = 120 pixels. Partículas menores são eliminadas.  Este valor
+corresponde, aproximadamente, a uma partícula ou cristal com cerca de
+10 pixels de diâmetro, ou cerca de 5,3 μm, quando se utiliza a lente
+de 20X.
+</p>
+</dd>
+<dt><code>-w, --synthetic-method-window-size=<var>NUMBER</var></code></dt>
+<dd><p>Tamanho em pixels da janela de varredura (Método Sintético). Valor
+default = 50.  Este valor já foi identificado como ótimo sobre grandes
+mosaicos capturados no CTF.
+</p>
+</dd>
+<dt><code>-d, --synthetic-method-window-step=<var>NUMBER</var></code></dt>
+<dd><p>Passo de deslocamento da janela de varredura (Método Sintético). Valor
+default = 50.  Este valor já foi identificado como ótimo sobre grandes
+mosaicos capturados no CTF.
+</p>
+</dd>
+<dt><code>-g, --synthetic-method-greylevels=<var>NUMBER</var></code></dt>
+<dd><p>Número de níveis de cinza na análise de textura (Método
+Sintético). Valor default = 32.  Este valor provavelmente tem pouco
+impacto e não deverá ser alterado.
+</p>
+</dd>
+<dt><code>-k, --synthetic-method-tmat-size=<var>NUMBER</var></code></dt>
+<dd><p>Classificador compatível com o tamanho da janela de varredura (w)
+utilizada.  (Método Sintético). Classificador previamente treinado e
+armazenado, representado por uma Matriz T.
+</p>
+</dd>
+<dt><code>-q, --synthetic-method-classifier-mode=<var>'mode'</var></code></dt>
+<dd><p>Tipo de classificador fornecido pelo Octave Linear ou
+quadrático. Valor default = quadratic.
+</p>
+</dd>
+<dt><code>-p, --particles-minimum-side=<var>NUMBER</var></code></dt>
+<dd><p>Tamanho mínimo de partículas (Método Analítico). Partículas muito
+pequenas podem gerar erros. Valor default = 10. Partículas com menos
+de 10 pixels são eliminadas do processo.
+</p>
+</dd>
+<dt><code>-u, --pixel-to-lens-scale-factor=<var>NUMBER</var></code></dt>
+<dd><p>Calibração do pixel em μm. Valor default = 0,53 μm/pixel (para a lente
+objetiva de 20X e câmera digital MRc).
+</p>
+</dd>
+<dt><code>--help</code></dt>
+<dd><p>Mostra esta janela de informação
+</p>
+</dd>
+<dt><code>--version</code></dt>
+<dd><p>Mostra informação de versão do código
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl>
+<dt><a name="index-me_002dclassify"></a>comando: <strong>me-classify</strong> <em>[OPTION]...</em></dt>
+<dd><p>me-classify (Measure-Classify) ou (Mede-Classifica).
+</p>
+<p>Esta rotina identifica automaticamente o Grau de Maturação de Pelotas.
+</p>
+<p>Executa o comando na pasta local ou pasta destino (target
+<var>DIRECTORY</var>).
+</p>
+<p>O diretório deve conter os arquivos gerados pelo script Relat Pelota,
+executado na máquina Windows com o programa AxioVision. São 9 arquivos
+que devem ter os seguintes nomes (fixos):
+</p>
+<ul>
+<li> mosaico-completo.tif
+
+</li><li> mosaico-diametral.tif
+
+</li><li> casca.tif
+
+</li><li> manto-externo.tif
+
+</li><li> manto-interno.tif
+
+</li><li> nucleo.tif
+
+</li><li> distribuicao-poros.tif
+
+</li><li> table-1.csv
+
+</li><li> title.csv
+</li></ul>
+
+<p>Os argumentos em <var>OPTION</var> podem conter os seguintes parâmetros:
+</p>
+<dl compact="compact">
+<dt><code>-l, --dot-lindex</code></dt>
+<dd><p>Opção reservada para programadores, usuários podem desconsiderá-la.
+</p>
+</dd>
+<dt><code>-r, --recursive</code></dt>
+<dd><p>Executa me-classify de forma recursiva, em todos os diretórios e sub
+diretórios.
+</p>
+</dd>
+<dt><code>-t,--target-directory=<var>DIRECTORY</var></code></dt>
+<dd><p>Analisa as imagens contidas num diretório específico.
+</p>
+</dd>
+<dt><code>-g,--grey-levels=<var>NUMBER</var></code></dt>
+<dd><p>Número de níveis de cinza na análise de textura. Valor default = 256.
+</p>
+</dd>
+<dt><code>-o,--connectivity=<var>NUMBER</var></code></dt>
+<dd><p>Conectividade (definição de contiguidade dos objetos). Valor default =
+8.
+</p>
+</dd>
+<dt><code>-s,--threshold=<var>NUMBER</var></code></dt>
+<dd><p>Limiar de segmentação do minério de ferro para a eliminação de outras
+fases (silicatos, poros, fundo etc.). Valor default = 0.5.
+</p>
+</dd>
+<dt><code>-i,--scrap-inf=<var>NUMBER</var></code></dt>
+<dd><p>Tamanho mínimo de partículas. Valor default = 100.
+</p>
+</dd>
+<dt><code>-j,--scrap-inf-not=<var>NUMBER</var></code></dt>
+<dd><p>Tamanho mínimo de poros. Valor default = 5.
+</p>
+</dd>
+<dt><code>-u,--scrap-sup=<var>NUMBER</var></code></dt>
+<dd><p>Tamanho máximo de poros. Valor default = 3000.
+</p>
+</dd>
+<dt><code>--help</code></dt>
+<dd><p>Mostra esta janela de informação
+</p>
+</dd>
+<dt><code>--version</code></dt>
+<dd><p>Mostra informação de versão do código
+</p>
+
+</dd>
+</dl>
+</dd></dl>
+
+
+<hr>
+<div class="header">
+<p>
+Next: <a href="Indice-de-Conceitos.html#g_t_00cdndice-de-Conceitos" accesskey="n" rel="next">Índice de Conceitos</a>, Previous: <a href="Introducao.html#Introdu_00e7_00e3o" accesskey="p" rel="prev">Introdução</a>, Up: <a href="index.html#Top" accesskey="u" rel="up">Top</a> &nbsp; [<a href="Indice-de-Conceitos.html#g_t_00cdndice-de-Conceitos" title="Index" rel="index">Index</a>]</p>
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+@c -*-texinfo-*-
+@c This is part of the ThesisPUC User Manual.
+@c Copyright (C) 2015 PUC-Rio
+@c See the file ThesisPUC.texi for copying conditions.
+
+@node Preface
+@unnumbered Prefácio
+
+Este manual descreve o uso do pacote ThesisPUC para escrever teses e
+dissertações em latex seguindo as normas da PUC-Rio. Versão
+@value{VERSION}.
+
+
+@menu
+* Autores::                
+* Licença do pacote ThesisPUC::
+@end menu
+
+
+@node Autores
+@unnumberedsec Autores deste Manual
+
+@itemize @bullet
+@item Thomas Lewiner (Departamento de Matemática)
+@item Marcelo Roberto Jimenez (CETUC)
+@item David Pirotte (MicDigit) <david@@altosw.be>
+@end itemize
+
+Se identificar algum erro neste manual, por favor comunique aos
+autores.
+
+
+@node Licença do pacote ThesisPUC
+@unnumberedsec Licença do pacote ThesisPUC
+@c @cindex copying
+@c @cindex GPL
+@cindex licença
+
+The package ThesisPUC is Free Software.  The package ThesisPUC is
+copyrighted, not public domain, and there are restrictions on its
+distribution or redistribution.
+
+@itemize @bullet
+@item
+The package ThesisPUC and supporting files are published under the
+terms of the GNU General Public License version 3 or later.  See the
+file @file{LICENSE}.
+
+@item
+The manual you're now reading is published under the terms of the GNU
+Free Documentation License (@pxref{GNU Free Documentation License}).
+@end itemize
+
+You must be aware there is no warranty whatsoever for the package
+ThesisPUC.  This is described in full in the licenses.
+
+
+@c Local Variables:
+@c TeX-master: "ThesisPUC.texi"
+@c ispell-local-dictionary: "american"
+@c End:

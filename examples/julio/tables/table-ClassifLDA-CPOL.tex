@@ -1,0 +1,72 @@
+% -*- coding: utf-8; -*-
+
+\begin{table} [!h]
+ \begin{center}  \footnotesize
+  \caption{Classificação das classes, nas imagens CPOL segmentadas pelo método CRM, usando FDA de 2 componentes.} \label{tab:ClassifLDA-CPOL}
+  ~\\[-1mm]
+   \begin{tabularx}
+     {\textwidth}
+     { p{3.5cm}
+       p{2cm}
+       @{\extracolsep{5mm}}n{5}{1}
+       @{\extracolsep{6mm}}n{6}{1}
+       @{\extracolsep{5mm}}n{7}{1} }
+
+   \textbf{\textbf{\mrcel {~~Técnicas de}{~~Validação}}}
+   & \textbf{~Classes}
+   & \textbf{\textbf{\mrcel {~Linear}{~~TA(\%)$^\dag$}}}
+   & \textbf{\textbf{\mrcel {Quadrático}{~~TA(\%)}}}
+   & \textbf{\textbf{\mrcel {Mahalanobis}{~~TA(\%)}}} \\ \toprule
+
+   ~\\[-2mm]
+   \multirow{4}{*}{Autovalidação} 
+   & Granular
+   & 98.26
+   & 96.33
+   & 94.04 \\ 
+      
+   ~
+   & Lamelar
+   & 97.06
+   & 97.95
+   & 97.73 \\
+   
+   ~   
+   & Lobular
+   & 94.29
+   & 99.14
+   & 99.14 \\
+   
+   ~   
+   & Global
+   & 96.54
+   & 97.81
+   & 96.97 \\ \midrule     
+   
+   \multirow{4}{*}{Validação Cruzada} 
+   & Granular
+   & 98.29
+   & 96.19
+   & 93.72 \\ 
+      
+   ~
+   & Lamelar
+   & 97.04
+   & 97.90
+   & 97.76 \\
+   
+   ~   
+   & Lobular
+   & 94.00
+   & 99.03
+   & 99.12 \\   
+   
+   ~   
+   & Global
+   & 96.44
+   & 97.71
+   & 96.87 \\ \midrule    
+   \end{tabularx}
+ \end{center}
+ {$^\dag$ \scriptsize TA(\%): Taxas de Acerto em \%.}
+\end{table}

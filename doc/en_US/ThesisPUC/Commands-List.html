@@ -1,0 +1,413 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<!-- This manual documents the ThesisPUC LaTeX document class usage version
+1.0.6.
+
+Copyright (C) 2015 - 2016 PUC-Rio
+
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.3 or
+any later version published by the Free Software Foundation; with no
+Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.  A
+copy of the license is included in the section entitled "GNU Free
+Documentation License." -->
+<!-- Created by GNU Texinfo 6.4.90, http://www.gnu.org/software/texinfo/ -->
+<head>
+<title>Commands List (ThesisPUC User Manual)</title>
+
+<meta name="description" content="Commands List (ThesisPUC User Manual)">
+<meta name="keywords" content="Commands List (ThesisPUC User Manual)">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="index.html#Top" rel="start" title="Top">
+<link href="Concept-Index.html#Concept-Index" rel="index" title="Concept Index">
+<link href="index.html#SEC_Contents" rel="contents" title="Table of Contents">
+<link href="index.html#Top" rel="up" title="Top">
+<link href="GNU-Free-Documentation-License.html#GNU-Free-Documentation-License" rel="next" title="GNU Free Documentation License">
+<link href="Using-ThesisPUC.html#Using-ThesisPUC" rel="prev" title="Using ThesisPUC">
+<style type="text/css">
+<!--
+a.summary-letter {text-decoration: none}
+blockquote.indentedblock {margin-right: 0em}
+blockquote.smallindentedblock {margin-right: 0em; font-size: smaller}
+blockquote.smallquotation {font-size: smaller}
+div.display {margin-left: 3.2em}
+div.example {margin-left: 3.2em}
+div.lisp {margin-left: 3.2em}
+div.smalldisplay {margin-left: 3.2em}
+div.smallexample {margin-left: 3.2em}
+div.smalllisp {margin-left: 3.2em}
+kbd {font-style: oblique}
+pre.display {font-family: inherit}
+pre.format {font-family: inherit}
+pre.menu-comment {font-family: serif}
+pre.menu-preformatted {font-family: serif}
+pre.smalldisplay {font-family: inherit; font-size: smaller}
+pre.smallexample {font-size: smaller}
+pre.smallformat {font-family: inherit; font-size: smaller}
+pre.smalllisp {font-size: smaller}
+span.nolinebreak {white-space: nowrap}
+span.roman {font-family: initial; font-weight: normal}
+span.sansserif {font-family: sans-serif; font-weight: normal}
+ul.no-bullet {list-style: none}
+-->
+</style>
+
+
+</head>
+
+<body lang="en">
+<a name="Commands-List"></a>
+<div class="header">
+<p>
+Next: <a href="GNU-Free-Documentation-License.html#GNU-Free-Documentation-License" accesskey="n" rel="next">GNU Free Documentation License</a>, Previous: <a href="Using-ThesisPUC.html#Using-ThesisPUC" accesskey="p" rel="prev">Using ThesisPUC</a>, Up: <a href="index.html#Top" accesskey="u" rel="up">Top</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Concept-Index.html#Concept-Index" title="Index" rel="index">Index</a>]</p>
+</div>
+<hr>
+<a name="Commands-List-1"></a>
+<h2 class="chapter">3 Commands List</h2>
+
+<p>This chapter describes all user available commands provided by the
+ThesisPUC latex document class.  Unless otherwise grouped to for subject
+purposes, entries are listed in alphabetical order.
+</p>
+
+
+<dl>
+<dt><a name="index-_005cabreviationstitle"></a>Optional: <strong>\abreviationstitle</strong> <em>{title}</em></dt>
+<dt><a name="index-_005cabreviationstitleuk"></a>Optional: <strong>\abreviationstitleuk</strong> <em>{title}</em></dt>
+<dd>
+<p>Sets the title of the abreviations section.  The default values are
+</p>
+<div class="example">
+<pre class="example">List of Abreviations (en_US)
+Lista de Abreviaturas (pt_BR)
+</pre></div>
+</dd></dl>
+
+
+<dl>
+<dt><a name="index-_005cabstract"></a>Mandatory: <strong>\abstract</strong> <em>{text}</em></dt>
+<dt><a name="index-_005cabstractuk"></a>Mandatory: <strong>\abstractuk</strong> <em>{text}</em></dt>
+<dd>
+<p>The former should be used to set the text of the abstract in the
+language of the thesis.  The latter to set the text of the abstract in
+english.
+</p></dd></dl>
+
+
+<dl>
+<dt><a name="index-_005cacknowledgment"></a>Mandatory: <strong>\acknowledgment</strong> <em>{text}</em></dt>
+<dd>
+<p>Sets the text of the acknowledgment section of the thesis.
+</p></dd></dl>
+
+
+<dl>
+<dt><a name="index-_005cadvisor"></a>Mandatory: <strong>\advisor</strong> <em>{name} {title}</em></dt>
+<dt><a name="index-_005cadvisorR"></a>Mandatory: <strong>\advisorR</strong> <em>{reversed name}</em></dt>
+<dt><a name="index-_005cadvisorInst"></a>Mandatory: <strong>\advisorInst</strong> <em>{institution name}</em></dt>
+<dd>
+<p>The first command should be used to set the full name of the advisor of
+the thesis, following a firstname(s) lastname order and without any
+comma.  The second command should be used to set the full name as well,
+but using a reverse order: lastname, firstname(s) using a comma to
+separate the lastname from the firstname(s).  For example:
+</p>
+<div class="example">
+<pre class="example">\advisor{Sidnei Paciornik}{Prof.}
+\advisorR{Paciornik, Sidnei}
+</pre></div>
+
+<p>The last command is used to set the advisor&rsquo;s institution name.  For
+example:
+</p>
+<div class="example">
+<pre class="example">\advisorInst{Pontifícia Universidade Católica do Rio de Janeiro}
+</pre></div>
+</dd></dl>
+
+
+<dl>
+<dt><a name="index-_005ccoadvisor"></a>Optional: <strong>\coadvisor</strong> <em>{name} {title}</em></dt>
+<dt><a name="index-_005ccoadvisorR"></a>Optional: <strong>\coadvisorR</strong> <em>{reversed name}</em></dt>
+<dt><a name="index-_005ccoadvisorInst"></a>Optional: <strong>\coadvisorInst</strong> <em>{institution name}</em></dt>
+<dt><a name="index-_005ccoadvisorII"></a>Optional: <strong>\coadvisorII</strong> <em>{name} {title}</em></dt>
+<dt><a name="index-_005ccoadvisorIIR"></a>Optional: <strong>\coadvisorIIR</strong> <em>{reversed name}</em></dt>
+<dt><a name="index-_005ccoadvisorIIInst"></a>Optional: <strong>\coadvisorIIInst</strong> <em>{institution name}</em></dt>
+<dt><a name="index-_005ccoadvisorIII"></a>Optional: <strong>\coadvisorIII</strong> <em>{name} {title}</em></dt>
+<dt><a name="index-_005ccoadvisorIIIR"></a>Optional: <strong>\coadvisorIIIR</strong> <em>{reversed name}</em></dt>
+<dt><a name="index-_005ccoadvisorIIIInst"></a>Optional: <strong>\coadvisorIIIInst</strong> <em>{institution name}</em></dt>
+<dd>
+<p>All the above commands follow the exact same definition schema then
+respectively <code>\advisor</code>, <code>\advisorR</code> and <code>\advisorInst</code>.
+</p></dd></dl>
+
+
+<dl>
+<dt><a name="index-_005cauthor"></a>Mandatory: <strong>\author</strong> <em>{name}</em></dt>
+<dt><a name="index-_005cauthorR"></a>Mandatory: <strong>\authorR</strong> <em>{reversed name}</em></dt>
+<dd>
+<p>The first command should be used to set the full name of the author of
+the thesis, following a firstname(s) lastname order and without any
+comma.  The second command should be used to set the full name as well,
+but using a reverse order: lastname, firstname(s) using a comma to
+separate the lastname from the firstname(s).  For example:
+</p>
+<div class="example">
+<pre class="example">\author{Julio César Álvarez Iglesias}
+\authorR{Álvarez Iglesias, Julio César}
+</pre></div>
+</dd></dl>
+
+<dl>
+<dt><a name="index-_005cCDD"></a>Mandatory: <strong>\CDD</strong> <em>{CDD number}</em></dt>
+<dd>
+<p>Sets the CDD number of the thesis.
+</p></dd></dl>
+
+
+<dl>
+<dt><a name="index-_005ccity"></a>Mandatory: <strong>\city</strong> <em>{name}</em></dt>
+</dl>
+
+
+<dl>
+<dt><a name="index-_005cday"></a>Mandatory: <strong>\day</strong> <em>{day number}</em></dt>
+<dt><a name="index-_005cmonth"></a>Mandatory: <strong>\month</strong> <em>{month name}</em></dt>
+<dt><a name="index-_005cyear"></a>Mandatory: <strong>\year</strong> <em>{year number}</em></dt>
+</dl>
+
+
+<dl>
+<dt><a name="index-_005cdedication"></a>Optional: <strong>\dedication</strong> <em>{text}</em></dt>
+<dd>
+<p>Sets the text of the dedication section of the thesis.
+</p></dd></dl>
+
+
+<dl>
+<dt><a name="index-_005cdepartment"></a>Mandatory: <strong>\department</strong> <em>{name}</em></dt>
+</dl>
+
+
+<dl>
+<dt><a name="index-_005cepigraph"></a>Optional: <strong>\epigraph</strong> <em>{text}</em></dt>
+<dt><a name="index-_005cepigraphauthor"></a>Optional: <strong>\epigraphauthor</strong> <em>{name}</em></dt>
+<dt><a name="index-_005cepigraphbook"></a>Optional: <strong>\epigraphbook</strong> <em>{title}</em></dt>
+<dd>
+<p>Respectively set the epigraph text, author and book title of an
+epigraph.  For example:
+</p>
+<div class="example">
+<pre class="example">\epigraph{%
+  My beautifull epigraph
+}
+\epigraphauthor{Wassily Kandinsky}
+\epigraphbook{Regards sur le passé}
+</pre></div>
+</dd></dl>
+
+
+<dl>
+<dt><a name="index-_005cjury"></a>Mandatory: <strong>\jury</strong></dt>
+<dt><a name="index-_005cjurymember"></a>Mandatory: <strong>\jurymember</strong> <em>{name} {title} {instution} {inst. acronym}</em></dt>
+<dt><a name="index-_005cschoolhead"></a>Mandatory: <strong>\schoolhead</strong> <em>{name} {title}</em></dt>
+<dd>
+<p>The <code>\jury</code> command is used as a block delimiter of the jury
+members.  Each jury member must be defined using four parameters.  The
+schoolhead must be defined using two parameters and must be the last
+entry of the jury block.  Here is an example:
+</p>
+<div class="example">
+<pre class="example">\jury{%
+  \jurymember{Paulo Roberto Gomes Brandão}{Prof.}
+    {Universidade Federal de Minas Gerais}{UFMG}
+  ...
+  \jurymember{Reiner Neumann}{Dr.}
+    {Centro de Tecnologia Mineral}{CETEM/MCTI}
+  \schoolhead{José Eugenio Leal}{Prof.}
+}
+</pre></div>
+
+<p><strong>Note:</strong> the mandatory <code>\school</code> command, also known as
+<code>center</code>, must be defined outside the <code>\jury block</code>.
+</p></dd></dl>
+
+
+<dl>
+<dt><a name="index-_005ccatalogprekeywords"></a>Mandatory: <strong>\catalogprekeywords</strong></dt>
+<dt><a name="index-_005ccatalogprekey"></a>Mandatory: <strong>\catalogprekey</strong> <em>{text}</em></dt>
+<dd>
+<p>The <code>\catalogprekeywords</code> command is used as a block delimiter for all
+<code>\catalogprekey</code> entries:
+</p>
+<div class="example">
+<pre class="example">\catalogprekeywords{%
+  \catalogprekey{Engenharia Química}%
+  \catalogprekey{Engenharia de Materiais}%
+}
+</pre></div>
+
+<p>Catalog prekey(s) is(are) mandatory: you must have at least one catalog
+prekey.  They preceed the list of keywords in the catalog entry of your
+thesis (ficha catalográfica), and list its domains of application, such
+as in the example above.
+</p></dd></dl>
+
+
+<dl>
+<dt><a name="index-_005ckeywords"></a>Mandatory: <strong>\keywords</strong></dt>
+<dt><a name="index-_005ckeywordsuk"></a>Mandatory: <strong>\keywordsuk</strong></dt>
+<dt><a name="index-_005ckey"></a>Mandatory: <strong>\key</strong> <em>{text}</em></dt>
+<dd>
+<p>The <code>\keywords</code> and \keywordsuk commands are used as a block
+delimiter for all <code>\key</code> entries, respectively in the language of
+the thesis and in english.  Here is an example:
+</p>
+<div class="example">
+<pre class="example">\keywords{%
+  \key{Microscopia Digital;}
+  ...
+  \key{Classificação.}
+}
+\keywordsuk{%
+  \key{Digital Microscopy;}%
+  ...
+  \key{Classification.}
+}
+</pre></div>
+</dd></dl>
+
+
+<dl>
+<dt><a name="index-_005cprogram"></a>Mandatory: <strong>\program</strong> <em>{text}</em></dt>
+<dd>
+<p>Set the post graduation program to which the thesis pertains. For
+example:
+</p>
+<div class="example">
+<pre class="example">\department{Engenharia Química e de Materiais}
+\program{Engenharia de Materiais e de Processos Químicos e Metalúrgicos}
+</pre></div>
+</dd></dl>
+
+
+<dl>
+<dt><a name="index-_005cresume"></a>Mandatory: <strong>\resume</strong> <em>{text}</em></dt>
+<dd>
+<p>Sets the curriculum vitae summary of the candidate.  For example:
+</p>
+<div class="example">
+<pre class="example">\resume{%
+  Graduou-se em Física pela Universidade da Havana (Havana,
+  Cuba). Fez mestrado ...}
+</pre></div>
+</dd></dl>
+
+
+<dl>
+<dt><a name="index-_005cschool"></a>Mandatory: <strong>\school</strong> <em>{name}</em></dt>
+<dd>
+<p>Set the school name, also known as the center name.  For example:
+</p>
+<div class="example">
+<pre class="example">\school{Centro Técnico Científico}
+</pre></div>
+</dd></dl>
+
+
+<dl>
+<dt><a name="index-_005ctablesmode"></a>Optional: <strong>\tablesmode</strong> <em>{mode}</em></dt>
+<dd>
+<p>This command is used to define whether the thesis preamble will include
+a list of figures, a list of tables, both or none.  The default is both.
+</p>
+<p>The accepted values for the <code>mode</code> are: <code>empty</code>, <code>fig</code>,
+<code>tab</code> and <code>figtab</code>.  Note that empty means no text, such as
+<code>\tablemodes{}</code>.
+</p></dd></dl>
+
+
+<dl>
+<dt><a name="index-_005ctitle"></a>Optional: <strong>\title</strong> <em>{title}</em></dt>
+<dt><a name="index-_005ctitleuk"></a>Optional: <strong>\titleuk</strong> <em>{title}</em></dt>
+<dd>
+<p>The first command is used to set the title in the language of the
+thesis.  The second command is used to set the title in english.  For
+example:
+</p>
+<div class="example">
+<pre class="example">\title{Desenvolvimento de um sistema de microscopia digital para
+  classificação automática de tipos de hematita em minério de ferro}
+
+\titleuk{Development of a digital microscopy system for automatic
+  classification of hematite types in iron ore}
+</pre></div>
+
+</dd></dl>
+
+<dl>
+<dt><a name="index-_005csubtitle"></a>Optional: <strong>\subtitle</strong> <em>{subtitle}</em></dt>
+<dd>
+<p>This command is optional and may be used if the thesis also has a
+subtitle.
+</p></dd></dl>
+
+
+<dl>
+<dt><a name="index-_005cuniversity"></a>Mandatory: <strong>\university</strong> <em>{name}</em></dt>
+<dt><a name="index-_005cuni"></a>Mandatory: <strong>\uni</strong> <em>{acronym}</em></dt>
+<dd>
+<p>Respectively set the name and shortname of the university.  For example:
+</p>
+<div class="example">
+<pre class="example">\university{Pontifícia Universidade Católica do Rio de Janeiro}
+\uni{PUC-Rio}
+</pre></div>
+
+</dd></dl>
+
+<dl>
+<dt><a name="index-_005cusecolour"></a>Optional: <strong>\usecolour</strong> <em>{boolean}</em></dt>
+<dd>
+<p>You must use this command and set it to <code>true</code> if your thesis makes
+use of colours. The default value is false.
+</p>
+<p>Note that this command influences the output of the catalog entry on the
+third page, labeled &rsquo;Ficha catalográfica&rsquo;, see <code>tiny.tex</code> and
+<code>tiny.pdf</code> for an example of usage and corresponding output.
+</p></dd></dl>
+
+
+<a name="Counters"></a>
+<h4 class="subheading">Counters</h4>
+
+<dl>
+<dt><a name="index-_005csetcounter"></a>Optional: <strong>\setcounter</strong> <em>{name} {value}</em></dt>
+<dd>
+<p>The <var>name</var> must be one of the following values: <code>tocdepth</code>,
+<code>lofdepth</code>, <code>lotdepth</code> or <code>secnumdepth</code>. All these
+counters are set to <code>3</code> per default in the ThesisPUC document
+class. Here is example to change these default values to <code>2</code>:
+</p>
+<div class="example">
+<pre class="example">\setcounter{tocdepth}{2}
+\setcounter{lofdepth}{2}
+\setcounter{lotdepth}{2}
+\setcounter{secnumdepth}{2}
+</pre></div>
+</dd></dl>
+
+
+<hr>
+<div class="header">
+<p>
+Next: <a href="GNU-Free-Documentation-License.html#GNU-Free-Documentation-License" accesskey="n" rel="next">GNU Free Documentation License</a>, Previous: <a href="Using-ThesisPUC.html#Using-ThesisPUC" accesskey="p" rel="prev">Using ThesisPUC</a>, Up: <a href="index.html#Top" accesskey="u" rel="up">Top</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Concept-Index.html#Concept-Index" title="Index" rel="index">Index</a>]</p>
+</div>
+
+
+
+</body>
+</html>

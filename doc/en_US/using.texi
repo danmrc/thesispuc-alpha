@@ -1,0 +1,138 @@
+@c -*- mode: texinfo; coding: utf-8 -*-
+@c This is part of the ThesisPUC User Manual
+@c Copyright (C)  2015 - 2020 PUC-Rio
+@c See the file ThesisPUC.texi for copying conditions.
+
+
+
+@node Using ThesisPUC
+@chapter Using ThesisPUC
+
+@indentedblock
+@strong{Notes:}
+
+@itemize
+@item
+At this moment, the documentation is available in english only:
+translations are on their way though, stay tuned;
+
+@item
+The pdf documentation you are now reading is also distributed with the
+@strong{ThesisPUC.zip}, here: @code{doc/en_US/ThesisPUC.pdf};
+
+@item
+If that feels more conformtable for you, the documentation is also
+available in html format, fire your browser and open this file:
+@code{doc/en_US/ThesisPUC/index.html};
+@end itemize
+@end indentedblock
+
+ThesisPUC comes with two examples: (a) @code{julio}, based on a real phd
+thesis and (b) @code{tiny}, which you can use to start your own master
+or phd thesis document. The @code{tiny} example directory has the
+following files:
+
+@indentedblock
+@table @code
+@item ThesisPUC.bst -> ../../ThesisPUC.bst
+@itemx ThesisPUC.cls -> ../../ThesisPUC.cls
+@itemx atbeginend.sty -> ../../atbeginend.sty
+@itemx puc.png -> ../../puc.png
+These files are mandatory to compile any master or phd thesis. You
+should not edit them. Note that in this @code{examples/tiny} case, they
+are symbolic links to the same and 'real' files two directories above.
+
+@strong{Notes for Windows users:} the above symbolic links won't exist
+on Windows.  Windows users must copy and paste these four files from the
+directory where they unzip the @strong{ThesisPUC.zip} archive.
+
+@item defs.tex
+In this file comes your new and redefined latex commands.
+
+@item images/
+@itemx tables/
+These directories are just a suggestion, to better organize things.
+
+@item abrevs.tex
+This file is where you list the abreviations used in your thesis.
+
+@item chapter-1.tex
+@itemx chapter-2.tex
+@itemx ...
+@itemx conclusions.tex
+The chapters and conclusions of your thesis.
+
+@item appendix.tex
+
+This file is optional.  It is used when part of the work done on the
+master or phd thesis has been published. If used, it comes after the
+bibliography.
+
+@item tiny.bib
+This file is where you keep all your bibliographic references. You can
+empty it and fill it with your own bibliographic references as your
+write your thesis. In its distributed version, it is a copy of
+@code{examples/julio/julio.bib}, where you can always look for and copy
+biblography entry models as needed.
+
+@item tiny.tex
+@itemx tiny.pdf
+These are the main document and the resulting pdf version after
+compilation.
+
+English thesis must declare their doccument class as this:
+
+@example
+\documentclass[
+  phd,
+  american
+]@{ThesisPUC@}
+@end example
+
+In the above:
+
+@example
+master replaces phd for master thesis;
+brazilian replaces american for Portuguese thesis.
+@end example
+
+For English thesis, the \title command must still hold the portuguese
+version of the title: it is used for the page 'Resumo'.
+
+The tiny.tex example has been declared as a phd american english written
+thesis (although we did not translate its chapters and conclusion
+content): all front pages, their order when applicable, as well as any
+automatically generated text are in English.
+
+@end table
+@end indentedblock
+
+As you may have understood from the explanations besides the
+aforementioned file list, the master document, @code{tiny.tex} in our
+case, imports the other @code{.tex} files: @code{defs}, @code{abrevs},
+@code{chapter-1}, @code{chapter-2}, @code{conclusions} and
+@code{appendix}.
+
+Now, time to fire-up your prefered editor, open the document
+@code{example/tiny/tiny.tex}, make a few changes and save the
+file. Aside, open a terminal, make sure you are in the
+@code{example/tiny} directory, then execute these commands:
+
+@example
+pdflatex tiny.tex
+bibtex tiny.aux
+pdflatex tiny.tex
+pdflatex tiny.tex
+@end example
+
+The first command compiles all intermediary files, and produces a first
+but incomplete version of @code{tiny.pdf}.
+
+The second command is used to generate the bibliography @code{tiny.bbl}
+file, looking for occurrences of @code{\cite@{@}} in your @code{.tex}
+files and checking for their corresponding entry in @code{tiny.bib}.
+
+The last two commands are necessary to produce a fully cross referenced
+@code{tiny.pdf} file, which you can visualize: it is ready for proof
+reading and printing.
+

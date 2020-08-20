@@ -1,0 +1,317 @@
+@c -*- mode: texinfo; coding: utf-8 -*-
+@c This is part of the Kisê User Manual.
+@c Copyright (C)  2011, 2012, 2013 Free Software Foundation, Inc.
+@c See the file kise.texi for copying conditions.
+
+
+@node Commands List
+@chapter Commands List
+
+This chapter describes all user available commands provided by the
+ThesisPUC latex document class.  Unless otherwise grouped to for subject
+purposes, entries are listed in alphabetical order.
+
+
+@deffn {Optional} \abreviationsmode @{mode@}
+
+This command is used to define whether the thesis preamble will include
+a list of abreviations (use) or not (none). The list of abreviatons is shown by default.
+
+The accepted values for the @code{mode} are: @code{use} and @code{none}. 
+@end deffn
+
+
+@deffn {Optional} \abreviationstitle @{title@}
+@deffnx {Optional} \abreviationstitleuk @{title@}
+
+Sets the title of the abreviations section.  The default values are
+
+@example
+List of Abreviations (en_US)
+Lista de Abreviaturas (pt_BR)
+@end example
+@end deffn
+
+
+@deffn {Mandatory} \abstract @{text@}
+@deffnx {Mandatory} \abstractuk @{text@}
+
+The former should be used to set the text of the abstract in the
+language of the thesis.  The latter to set the text of the abstract in
+english.
+@end deffn
+
+
+@deffn {Mandatory} \acknowledgment @{text@}
+
+Sets the text of the acknowledgment section of the thesis.
+@end deffn
+
+
+@deffn {Mandatory} \advisor @{name@} @{title@}
+@deffnx {Mandatory} \advisorR @{reversed name@}
+@deffnx {Mandatory} \advisorInst @{institution name@} @{inst. acronym@}
+
+The first command should be used to set the full name of the advisor of
+the thesis, following a firstname(s) lastname order and without any
+comma.  The second command should be used to set the full name as well,
+but using a reverse order: lastname, firstname(s) using a comma to
+separate the lastname from the firstname(s).  For example:
+
+@example
+\advisor@{Sidnei Paciornik@}@{Prof.@}
+\advisorR@{Paciornik, Sidnei@}
+@end example
+
+The last command is used to set the advisor's institution name and acronym.  For
+example:
+
+@example
+\advisorInst@{Pontifícia Universidade Católica do Rio de Janeiro@}@{PUC-Rio@}
+@end example
+@end deffn
+
+
+@deffn {Optional} \coadvisor @{name@} @{title@}
+@deffnx {Optional} \coadvisorR @{reversed name@}
+@deffnx {Optional} \coadvisorInst @{institution name@} @{inst. acronym@}
+
+@deffnx {Optional} \coadvisorII @{name@} @{title@}
+@deffnx {Optional} \coadvisorIIR @{reversed name@}
+@deffnx {Optional} \coadvisorIIInst @{institution name@} @{inst. acronym@}
+
+@deffnx {Optional} \coadvisorIII @{name@} @{title@}
+@deffnx {Optional} \coadvisorIIIR @{reversed name@}
+@deffnx {Optional} \coadvisorIIIInst @{institution name@} @{inst. acronym@}
+
+All the above commands follow the exact same definition schema then
+respectively @code{\advisor}, @code{\advisorR} and @code{\advisorInst}.
+@end deffn
+
+
+@deffn {Mandatory} \author @{name@}
+@deffnx {Mandatory} \authorR @{reversed name@}
+
+The first command should be used to set the full name of the author of
+the thesis, following a firstname(s) lastname order and without any
+comma.  The second command should be used to set the full name as well,
+but using a reverse order: lastname, firstname(s) using a comma to
+separate the lastname from the firstname(s).  For example:
+
+@example
+\author@{Julio César Álvarez Iglesias@}
+\authorR@{Álvarez Iglesias, Julio César@}
+@end example
+@end deffn
+
+@deffn {Mandatory} \CDD @{CDD number@}
+
+Sets the CDD number of the thesis.
+@end deffn
+
+
+@deffn {Mandatory} \city @{name@}
+@end deffn
+
+
+@deffn {Mandatory} \day @{day number@}
+@deffnx {Mandatory} \month @{month name@}
+@deffnx {Mandatory} \year @{year number@}
+@end deffn
+
+
+@deffn {Optional} \dedication @{text@}
+
+Sets the text of the dedication section of the thesis.
+@end deffn
+
+
+@deffn {Mandatory} \department @{name@}
+@end deffn
+
+
+@deffn {Optional} \epigraph @{text@}
+@deffnx {Optional} \epigraphauthor @{name@}
+@deffnx {Optional} \epigraphbook @{title@}
+
+Respectively set the epigraph text, author and book title of an
+epigraph.  For example:
+
+@example
+\epigraph@{%
+  My beautifull epigraph
+@}
+\epigraphauthor@{Wassily Kandinsky@}
+\epigraphbook@{Regards sur le passé@}
+@end example
+@end deffn
+
+
+@deffn {Mandatory} \jury
+@deffnx {Mandatory} \jurymember @{name@} @{title@} @{instution@} @{inst. acronym@}
+
+The @code{\jury} command is used as a block delimiter of the jury
+members.  Each jury member must be defined using four parameters.  Here is an example:
+
+@example
+\jury@{%
+  \jurymember@{Paulo Roberto Gomes Brandão@}@{Prof.@}
+    @{Universidade Federal de Minas Gerais@}@{UFMG@}
+  ...
+  \jurymember@{Reiner Neumann@}@{Dr.@}
+    @{Centro de Tecnologia Mineral@}@{CETEM/MCTI@}
+@}
+@end example
+
+
+@deffn {Mandatory} \catalogprekeywords
+@deffnx {Mandatory} \catalogprekey @{text@}
+
+The @code{\catalogprekeywords} command is used as a block delimiter for all
+@code{\catalogprekey} entries:
+
+@example
+\catalogprekeywords@{%
+  \catalogprekey@{Engenharia Química@}%
+  \catalogprekey@{Engenharia de Materiais@}%
+@}
+@end example
+
+Catalog prekey(s) is(are) mandatory: you must have at least one catalog
+prekey.  They preceed the list of keywords in the catalog entry of your
+thesis (ficha catalográfica), and list its domains of application, such
+as in the example above.
+@end deffn
+
+
+@deffn {Mandatory} \keywords
+@deffnx {Mandatory} \keywordsuk
+@deffnx {Mandatory} \key @{text@}
+
+The @code{\keywords} and \keywordsuk commands are used as a block
+delimiter for all @code{\key} entries, respectively in the language of
+the thesis and in english.  Here is an example:
+
+@example
+\keywords@{%
+  \key@{Microscopia Digital;@}
+  ...
+  \key@{Classificação.@}
+@}
+\keywordsuk@{%
+  \key@{Digital Microscopy;@}%
+  ...
+  \key@{Classification.@}
+@}
+@end example
+@end deffn
+
+
+@deffn {Mandatory} \program @{text@}
+
+Set the post graduation program to which the thesis pertains. For
+example:
+
+@example
+\department@{Engenharia Química e de Materiais@}
+\program@{Engenharia de Materiais e de Processos Químicos e Metalúrgicos@}
+@end example
+@end deffn
+
+
+@deffn {Mandatory} \resume @{text@}
+
+Sets the curriculum vitae summary of the candidate.  For example:
+
+@example
+\resume@{%
+  Graduou-se em Física pela Universidade da Havana (Havana,
+  Cuba). Fez mestrado ...@}
+@end example
+@end deffn
+
+
+@deffn {Mandatory} \school @{name@}
+
+Set the school name, also known as the center name.  For example:
+
+@example
+\school@{Centro Técnico Científico@}
+@end example
+@end deffn
+
+
+@deffn {Optional} \tablesmode @{mode@}
+
+This command is used to define whether the thesis preamble will include
+a list of figures, a list of tables, both or none.  The default is both.
+
+The accepted values for the @code{mode} are: @code{empty}, @code{fig},
+@code{tab} and @code{figtab}.  Note that empty means no text, such as
+@code{\tablemodes@{@}}.
+@end deffn
+
+
+@deffn {Optional} \title @{title@}
+@deffnx {Optional} \titleuk @{title@}
+
+The first command is used to set the title in the language of the
+thesis.  The second command is used to set the title in english.  For
+example:
+
+@example
+\title@{Desenvolvimento de um sistema de microscopia digital para
+  classificação automática de tipos de hematita em minério de ferro@}
+
+\titleuk@{Development of a digital microscopy system for automatic
+  classification of hematite types in iron ore@}
+@end example
+
+@end deffn
+
+@deffn {Optional} \subtitle @{subtitle@}
+
+This command is optional and may be used if the thesis also has a
+subtitle.
+@end deffn
+
+
+@deffn {Mandatory} \university @{name@}
+@deffnx {Mandatory} \uni @{acronym@}
+
+Respectively set the name and shortname of the university.  For example:
+
+@example
+\university@{Pontifícia Universidade Católica do Rio de Janeiro@}
+\uni@{PUC-Rio@}
+@end example
+
+@end deffn
+
+@deffn {Optional} \usecolour @{boolean@}
+
+You must use this command and set it to @code{true} if your thesis makes
+use of colours. The default value is false.
+
+Note that this command influences the output of the catalog entry on the
+third page, labeled 'Ficha catalográfica', see @code{tiny.tex} and
+@code{tiny.pdf} for an example of usage and corresponding output.
+@end deffn
+
+
+@subheading Counters
+
+@deffn {Optional} \setcounter @{name@} @{value@}
+
+The @var{name} must be one of the following values: @code{tocdepth},
+@code{lofdepth}, @code{lotdepth} or @code{secnumdepth}. All these
+counters are set to @code{3} per default in the ThesisPUC document
+class. Here is example to change these default values to @code{2}:
+
+@example
+\setcounter@{tocdepth@}@{2@}
+\setcounter@{lofdepth@}@{2@}
+\setcounter@{lotdepth@}@{2@}
+\setcounter@{secnumdepth@}@{2@}
+@end example
+@end deffn

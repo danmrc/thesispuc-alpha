@@ -1,0 +1,72 @@
+% -*- coding: utf-8; -*-
+
+\begin{table} [!h]
+ \begin{center}  \footnotesize
+  \caption{Classificação das classes, nas imagens CPOL segmentadas pelo método CW, usando FDA de 2 componentes.} \label{tab:ClassifLDA-Axio}
+  ~\\[-1mm]
+   \begin{tabularx}
+     {\textwidth}
+     { p{3.5cm}
+       p{2cm}
+       @{\extracolsep{5mm}}n{5}{1}
+       @{\extracolsep{6mm}}n{6}{1}
+       @{\extracolsep{5mm}}n{7}{1} }
+
+   \textbf{\textbf{\mrcel {~~Técnicas de}{~~Validação}}}
+   & \textbf{~Classes}
+   & \textbf{\textbf{\mrcel {~Linear}{~~TA(\%)$^\dag$}}}
+   & \textbf{\textbf{\mrcel {Quadrático}{~~TA(\%)}}}
+   & \textbf{\textbf{\mrcel {Mahalanobis}{~~TA(\%)}}} \\ \toprule
+
+   ~\\[-2mm]
+   \multirow{4}{*}{Autovalidação} 
+   & Granular
+   & 98.40
+   & 95.23
+   & 87.89 \\ 
+      
+   ~
+   & Lamelar
+   & 95.54
+   & 96.56
+   & 94.88 \\
+   
+   ~   
+   & Lobular
+   & 88.95
+   & 96.01
+   & 97.20 \\
+   
+   ~   
+   & Global
+   & 94.30
+   & 95.93
+   & 93.32 \\ \midrule     
+   
+   \multirow{4}{*}{Validação Cruzada} 
+   & Granular
+   & 98.38
+   & 95.18
+   & 87.84 \\ 
+      
+   ~
+   & Lamelar
+   & 95.49
+   & 96.56
+   & 94.72 \\
+   
+   ~   
+   & Lobular
+   & 88.52
+   & 95.86
+   & 97.02 \\   
+   
+   ~   
+   & Global
+   & 94.13
+   & 95.87
+   & 93.19 \\ \midrule    
+   \end{tabularx}
+ \end{center}
+ {$^\dag$ \scriptsize TA(\%): Taxas de Acerto em \%.}
+\end{table}

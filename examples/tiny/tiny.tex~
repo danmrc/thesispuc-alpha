@@ -1,0 +1,229 @@
+%% -*- coding: utf-8; -*-
+
+\documentclass[
+  phd,
+  %% master
+  %% brazilian
+  american
+]{ThesisPUC}
+
+
+%%%
+%%% Additional Packages
+%%%
+
+  %% \usepackage[brazilian]{babel}      %% in ThesisPUC.cls
+  %% \usepackage[utf8]{inputenc}        %% .
+  %% \usepackage[T1]{fontenc}           %% .
+  %% \usepackage{lmodern}               %% .
+  %% \usepackage[pdftex]{graphicx}	%% .
+
+  \usepackage{tabularx}
+  \usepackage{multirow}
+  \usepackage{multicol}
+  \usepackage{colortbl}
+  \usepackage[%
+    dvipsnames,
+    svgnames,
+    x11names,
+    fixpdftex
+  ]{xcolor}
+  \usepackage{numprint}
+  \usepackage{textcomp}
+  \usepackage{booktabs}
+  \usepackage{amsmath}
+  \usepackage{enumitem}
+  \usepackage{amssymb}
+  \usepackage{textcomp}
+% \usepackage{etoolbox}
+
+%% numprint 
+\npthousandsep{.}
+\npdecimalsign{,}
+
+%% ThesisPUC option
+%\tablesmode{figtab} %% [nada, fig, tab ou figtab]
+%\abreviationsmode{none} %% [none ou use] %% Default is [use]
+
+
+%%%
+%%% Counters
+%%%
+
+%% uncomment and change for other depth values
+%% \setcounter{tocdepth}{3}
+%% \setcounter{lofdepth}{3}
+%% \setcounter{lotdepth}{3}
+%% \setcounter{secnumdepth}{3}
+
+
+%%%
+%%% New commands and other global definitions
+%%%
+
+\input{defs}
+
+%%%
+%%% Misc.
+%%%
+
+\usecolour{true}
+
+%%%
+%%% Titulos
+%%%
+
+\author{Julio César Álvarez Iglesias}
+\authorR{Álvarez Iglesias, Julio César}
+
+\advisor{Sidnei Paciornik}{Prof.}
+\advisorR{Paciornik, Sidnei}
+% If the advisor's department is different from author's department, uncomment the next line and type the correct name and acronym of advisor's institution.
+%\advisorInst{institution name}{acronym}
+
+\coadvisor{Otávio da Fonseca Martins Gomes}{Dr.}
+\coadvisorR{da Fonseca Martins Gomes, Otávio}
+\coadvisorInst{Centro de Tecnologia Mineral}{CETEM/MCTI}
+
+%% \title{Desenvolvimento de um sistema de microscopia digital para
+%%  classificação automática de tipos de hematita em minério de ferro}
+
+\title{Desenvolvimento de um sistema de microscopia digital para
+  classificação automática de tipos de hematita em minério de ferro}
+
+\titleuk{Development of a digital microscopy system for automatic
+  classification of hematite types in iron ore}
+
+%% \subtitulo{Aqui vai o subtitulo caso precise}
+
+\day{9}
+\month{August}
+\year{2012}
+
+\city{Rio de Janeiro}
+\CDD{620.11}
+\department{Engenharia Química e de Materiais}
+\program{Engenharia de Materiais e de Processos Químicos e Metalúrgicos}
+\school{Centro Técnico Científico}
+\university{Pontifícia Universidade Católica do Rio de Janeiro}
+\uni{PUC-Rio}
+
+%%%
+%%% Jury
+%%%
+
+\jury{%
+  \jurymember{Paulo Roberto Gomes Brandão}{Prof.}
+    {Universidade Federal de Minas Gerais}{UFMG}
+  \jurymember{Leonardo Evangelista Lagoeiro}{Prof.}
+    {Universidade Federal de Ouro Preto}{UFOP}
+  \jurymember{Reiner Neumann}{Dr.}
+    {Centro de Tecnologia Mineral}{CETEM/MCTI}
+  \jurymember{Marcos Henrique de Pinho Maurício}{Dr.}
+    {Departamento de Engenharia Química e de Materiais}{PUC-Rio}
+}
+
+%%%
+%%% Resume
+%%%
+
+\resume{%
+  Majored in physics by the University of Havana (Havana,
+  Cuba)...}
+
+%%%
+%%% Acknowledgment (REMINDER TO SCHOLARSHIP STUDENTS. Do not forget to thank the agencies that supported your work.)
+%%%
+
+\acknowledgment{%
+  \noindent I would like to first thank my advisor ...
+  \bigskip
+
+  \noindent Then I wish to thank ...
+}
+
+%%%
+%%% Catalog prekeywords
+%%%
+
+\catalogprekeywords{%
+  \catalogprekey{Engenharia Química}%
+  \catalogprekey{Engenharia de Materiais}%
+}
+
+%%%
+%%% Keywords
+%%%
+
+\keywords{%
+  \key{Minério de Ferro}
+  \key{Cristais de Hematita}
+  \key{Microscopia Digital}
+  \key{Análise de Imagens}
+  \key{Classificação}
+  \key{Microscopia de Luz Polarizada}
+}
+
+\keywordsuk{%
+  \key{Iron Ore}%
+  \key{Hematite Crystals}%
+  \key{Digital Microscopy}%
+  \key{Image Analysis}%
+  \key{Classification}%
+  \key{Polarized Light Microscopy}%
+}
+
+%%%
+%%% Abstract
+%%%
+
+\abstract{%
+  O minério de ferro é um material policristalino oriundo de processos
+  naturais complexos durante tempos geológicos, que dão origem ...
+}
+
+\abstractuk{%
+  Iron ore is a polycrystalline material created by complex natural
+  processes during geological periods, which give rise to ...}
+
+%%%
+%%% Dedication
+%%%
+
+\dedication{%
+  To my parents, for their support\\
+and encouragement.
+}
+
+%%%
+%%% Epigraph
+%%%
+
+\epigraph{%
+  My beautifull epigraph
+}
+\epigraphauthor{Wassily Kandinsky}
+\epigraphbook{Regards sur le passé}
+
+%%%
+%%% Hyphenation
+%%%
+
+\hyphenation{PON-TI-FÍ-CIA}
+
+%%%
+%%% 
+%%%
+
+\begin{document}
+
+  \input{chapter-1}
+  \input{chapter-2}
+  \input{conclusions}
+  %% ...
+  \arial
+  \bibliography{tiny}
+  \normalfont
+  \input{appendix}
+
+\end{document}

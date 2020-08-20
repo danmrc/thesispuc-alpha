@@ -1,0 +1,15 @@
+@c -*- mode: texinfo; coding: utf-8 -*-
+
+@deffn {Latex command} \abreviationstitle title
+@deffnx {Latex command} \tituloglossario title
+@deffnx {Latex command} \abreviationstitleuk title
+@deffnx {Latex command} \tituloglossariouk title
+
+Sets the title of the abreviations section.  The default values are
+
+@example
+List of Abreviations (en_US)
+Lista de Abreviaturas (pt_BR)
+@end example
+
+@end deffn

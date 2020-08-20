@@ -1,0 +1,98 @@
+
+@deffn comando rg-ergbd [OPTION]... FORMAT
+rg-ergbd (Region Growing - euclidean RGB distance) ou (Crescimento de
+Regiões - Distância euclideana em cores RGB).
+
+Esta rotina identifica os tipos de Hematita em 5 classes: Martita,
+Microcristalina, Granular, Lamelar ou Lobular.
+
+Executa o comando na pasta local ou pasta destino (target
+@var{DIRECTORY}) sobre um par de imagens composto por uma imagem em
+campo claro (BF - Bright Field) e uma imagem em polarização circular
+(CPOL). Estas imagens devem ter extensão @var{FORMAT}.
+
+Os argumentos em @var{OPTION} podem conter os seguintes parâmetros:
+
+@table @code
+@item -l, --dot-lindex
+Opção reservada para programadores, usuários podem desconsiderá-la
+
+@item -r, --recursive
+Executa rg-ergbd de forma recursiva, em todos os diretórios e sub
+diretórios...
+
+@item -t, --target-directory=@var{DIRECTORY}
+Analisa as imagens contidas num diretório específico
+
+@item -s, --threshold=@var{NUMBER}
+Limiar para separação dos grãos por diferença de cores entre sementes
+(Método Analítico). Valor default = 0.032. Este valor já foi
+identificado como ótimo sobre grandes mosaicos capturados no CTF.
+
+@item -m, --segmentation-threshold=@var{NUMBER}
+Limiar de segmentação das hematitas para eliminação de outras fases
+(goethita, quartzo etc.) (Método Sintético) Valor típico para imagens
+obtidas na Vale = 0,75 (equivale ao tom de corte de 0,75x256 = 192)
+
+@item -n, --noise=@var{NUMBER}
+Ruído acrescentado na imagem para a geração de sementes dos grãos
+(Método Analítico) Valor default = 0. O uso de ruído ≠0 gera muitas
+sementes e, apesar de poder melhorar a detecção de cristais, aumenta
+demais o tempo de processamento.
+
+@item -c, --canny=@var{NUMBER}
+Variável do método de Canny utilizado na detecção de bordas (Método
+Analítico). Valor default = 1.5. Este valor não deverá mudar.
+
+@item -o, --connectivity=@var{NUMBER}
+Conectividade (definição de contiguidade dos objetos). Valor default =
+4.  Não deverá ser alterado.
+
+@item -i, --scrap-inf=@var{NUMBER}
+Tamanho mínimo de partículas de hematita (Método Sintético). Valor
+default = 120 pixels. Partículas menores são eliminadas.  Este valor
+corresponde, aproximadamente, a uma partícula ou cristal com cerca de
+10 pixels de diâmetro, ou cerca de 5,3 μm, quando se utiliza a lente
+de 20X.
+
+@item -w, --synthetic-method-window-size=@var{NUMBER}
+Tamanho em pixels da janela de varredura (Método Sintético). Valor
+default = 50.  Este valor já foi identificado como ótimo sobre grandes
+mosaicos capturados no CTF.
+
+@item -d, --synthetic-method-window-step=@var{NUMBER}
+Passo de deslocamento da janela de varredura (Método Sintético). Valor
+default = 50.  Este valor já foi identificado como ótimo sobre grandes
+mosaicos capturados no CTF.
+
+@item -g, --synthetic-method-greylevels=@var{NUMBER}
+Número de níveis de cinza na análise de textura (Método
+Sintético). Valor default = 32.  Este valor provavelmente tem pouco
+impacto e não deverá ser alterado.
+
+@item -k, --synthetic-method-tmat-size=@var{NUMBER}
+Classificador compatível com o tamanho da janela de varredura (w)
+utilizada.  (Método Sintético). Classificador previamente treinado e
+armazenado, representado por uma Matriz T.
+
+@item -q, --synthetic-method-classifier-mode=@var{'mode'}
+Tipo de classificador fornecido pelo Octave Linear ou
+quadrático. Valor default = quadratic.
+
+@item -p, --particles-minimum-side=@var{NUMBER}
+Tamanho mínimo de partículas (Método Analítico). Partículas muito
+pequenas podem gerar erros. Valor default = 10. Partículas com menos
+de 10 pixels são eliminadas do processo.
+
+@item -u, --pixel-to-lens-scale-factor=@var{NUMBER}
+Calibração do pixel em μm. Valor default = 0,53 μm/pixel (para a lente
+objetiva de 20X e câmera digital MRc).
+
+@item --help
+Mostra esta janela de informação
+
+@item --version
+Mostra informação de versão do código
+
+@end table
+@end deffn

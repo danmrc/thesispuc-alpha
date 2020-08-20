@@ -1,0 +1,36 @@
+% -*- coding: iso-8859-1; -*-
+
+%%%
+%%% Newcommands
+%%%
+
+\newcommand{\degree}{\ensuremath{^\circ}}
+
+\newcommand{\cetem}{Centro de Tecnologia Mineral}
+
+\newcommand{\mybulletOB}{%
+  % \textbullet
+  % \checkmark
+  $\triangleright$
+  %\textopenbullet
+}
+
+\newcolumntype{L}{>{\raggedright \arraybackslash}X}
+\newcolumntype{R}{>{\raggedleft \arraybackslash}X}
+\newcolumntype{C}{>{\centering \arraybackslash}X}
+\newcolumntype{M}[1]{>{\centering\hspace{0pt}}m{#1}}
+
+\newcommand{\mrcel}[2]{%
+\begin{tabular}[c]{@{}c@{}}#1\\#2\end{tabular}}
+
+\newcommand{\mrcell}[2]{%
+\begin{tabular}[l]{@{}l@{}}#1\\#2\end{tabular}}
+
+\newcommand{\mrcelthree}[3]{%
+\begin{tabular}[c]{@{}c@{}c@{}}#1\\#2\\#3\end{tabular}}
+
+\newcommand{\mrcelcolorg}[2]{%
+\begin{tabular}{l}\rowcolor{Gainsboro}#1\\#2\end{tabular}}
+
+\newcommand{\mytbcimg}[3]{%
+  \multicolumn{1}{C}{\parbox[c]{#1}{\includegraphics[width=#2]{#3}}}}

@@ -1,0 +1,65 @@
+% -*- coding: utf-8; -*-
+
+\chapter{Conclusão e Trabalhos Futuros}
+
+Um sistema de microscopia digital com reconhecimento e classificação
+automática dos cristais de hematita em minérios de ferro foi
+desenvolvido.
+
+O método utiliza operações tradicionais de processamento digital de
+imagens e propõe uma segmentação automática de cristais baseada no
+cálculo da distância espectral, a fim de controlar o crescimento das
+regiões partindo das sementes. É importante salientar que o método de
+crescimento de regiões proposto é muito robusto e capaz de lidar com o
+grande número de sementes derivado do método de \textit{watersheds}.
+
+O método proposto também envolve técnicas de microscopia digital,
+permitindo a segmentação dos cristais tanto das imagens com polarização
+linear quanto das imagens com polarização circular.
+
+Os resultados obtidos para ambos os tipos de imagens são muito
+promissores. A grande maioria dos cristais foi corretamente
+identificada. Mesmo cristais adjacentes com cores similares foram
+corretamente segmentados. O método é completamente automático com um
+único parâmetro t para ser ajustado, o qual controla a sensibilidade da
+distancia Euclidiana do pixel no espaço RGB.
+
+Medidas morfológicas dos cristais foram obtidas com sucesso. Estas
+medidas foram analisadas e estudadas estatisticamente.
+
+Os resultados obtidos para a classificação das classes pertencentes a
+ambos os tipos de imagens foram muito bons. Taxas de acerto globais
+próximas a 98\% foram obtidas, tanto para a autovalidação, quanto para a
+validação cruzada.
+
+No entanto, algumas limitações devem ser apontadas. Dada a sua
+característica de segmentação, o método também é sensível a problemas de
+preparação de amostras, tais como problemas de relevo ou arranhões. Isto
+chama a atenção para uma cuidadosa preparação de amostras, sendo que,
+esta operação é de vital importância para a realização de qualquer tipo
+de análise de imagens automática.
+
+Outro método mais simples de segmentação de cristais também foi
+desenvolvido. Este método é mais veloz em sua etapa automática, mas
+exige uma trabalhosa etapa de ajuste manual, o que o torna menos
+prático.
+
+É fundamental também comentar que o sistema proposto é limitado a
+classificar e medir cristais das fases compactas da hematita - granular,
+lamelar e lobular - e não se propõe a identificar e quantificar hematita
+microcristalina e martita. Como comentado na introdução desta tese, um
+outro enfoque, denominado método sintético, busca incluir estas outras
+classes no sistema através de uma análise de textura (no sentido da área
+de PADI e não no sentido de textura microestrutural). Resultados
+preliminares indicam que este enfoque é promissor, sendo capaz de
+discriminar as 5 classes citadas com boa taxa de acerto. No entanto,
+justamente por ter um enfoque sintético, o método não é capaz de
+discriminar e medir cristais individuais, o que é uma limitação
+importante.
+
+Assim, como uma proposta para trabalho futuro, pode-se buscar combinar
+os dois enfoques. O enfoque sintético seria capaz de discriminar as
+fases compactas e porosas e, em seguida, as fases compactas seriam
+submetidas ao método analítico proposto na presente tese, para
+discriminação e medida dos parâmetros morfológicos dos cristais
+individuais.

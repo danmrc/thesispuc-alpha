@@ -1,0 +1,185 @@
+% -*- coding: utf-8; -*-
+
+\chapter{Introdução}
+
+O ferro é o metal mais usado pela sociedade devido à alta
+disponibilidade, pelas propriedades físicas (dutilidade,
+maleabilidade, resistência mecânica, etc.), por sua importância na
+produção de aço e ferro fundido, assim como pelas suas muitas
+aplicações.
+
+O uso do ferro vem desde a antiguidade. Provavelmente a primeira vez
+que o homem fez contato com o ferro metálico foi sob a forma de
+meteoritos, daí a etimologia da palavra siderurgia, cujo radical
+latino \textit{sider} significa estrela ou astro. No antigo Egito
+foram descobertos ornamentos de ferro datados de cerca de 4000 A.C.,
+também na pirâmide de Gizé foram achadas peças datadas de 2900 A.C. A
+primeira indústria do ferro apareceu ao sul do Cáucaso, 1700 A.C.,
+entre os Hititas. Também, na Assíria, foram encontradas ferramentas de
+aço que datavam de 700 anos A.C. \cite{1}
+
+Na atualidade, o uso crescente do aço e do ferro fundido na fabricação
+de produtos de consumo evidencia a importância da indústria
+metalúrgica para a economia nacional e global. Em contrapartida, a
+qualidade do minério de ferro disponível vem diminuindo ao longo dos
+anos. Portanto, as empresas de mineração tem se esforçado para
+aumentar a produção e melhorar seus produtos, a fim de manter e
+aperfeiçoar o seu desempenho no mercado.
+
+O minério de ferro é um material policristalino que passou por vários
+processos naturais complexos. Estes processos ocorreram durante tempos
+geológicos, devido aos efeitos da pressão, às mudanças de temperatura,
+à recristalização e à erosão, dando origem a diversas características
+intrínsecas, e consequentemente, a um comportamento industrial
+variável.\cite{2}
+
+Assim, o minério de ferro é normalmente utilizado de duas formas:
+minérios granulados e minérios aglomerados. Os granulados (entre $25$
+mm e $6$ mm) são adicionados diretamente nos fornos de redução,
+enquanto os aglomerados são os minérios finos que devido à sua
+granulometria necessitam de aglomeração. Daí surgem as denominações
+\textit{sinter-feed} (entre $6,35$ mm e $0,15$ mm) e
+\textit{pellet-feed} (menos de $0,15$ mm) que identificam as frações
+usadas nos processos de sinterização e pelotização,
+respectivamente.\cite{3}
+
+Devido ao grande interesse econômico, bem como o seu desempenho
+durante o processo, a caracterização de cada uma destas frações
+adquire grande importância. No entanto, não existe um método universal
+para isto. De fato, este é um problema complexo, uma vez que são
+diversos os atributos que caracterizam forma, textura, trama ou
+porosidade, assim como as maneiras como são combinados em cada
+caso.\cite{4}
+
+Os minerais carreadores de ferro mais comuns (hematita, magnetita e
+goethita) podem ser identificados visualmente no Microscópio de Luz
+Refletida (MLR) através de suas refletâncias distintas.\cite{5} Assim,
+a caracterização qualitativa de minérios de ferro é geralmente
+realizada através de avaliação visual no MLR.
+
+Na indústria mineral, a caracterização microestrutural (mineralógica e
+textural) do minério de ferro e seus aglomerados é tradicionalmente
+realizada por operadores humanos, pela observação de amostras ao MLR,
+para identificar as fases presentes e estimar suas frações. Esse é um
+procedimento rotineiro, realizado algumas vezes por dia e
+consequentemente suscetível a falhas decorrentes da fadiga humana,
+além de erros aleatórios diversos. Deste modo, tem havido um interesse
+crescente no desenvolvimento de sistemas automáticos de análise
+quantitativa que possam conferir maior reprodutibilidade,
+confiabilidade e velocidade.
+
+Por outro lado, sistemas automáticos de análise digital de imagens são
+capazes de identificar hematita, magnetita e goethita pelas suas
+tonalidades em imagens obtidas pelo MLR. Estes sistemas têm a vantagem
+de serem mais velozes, práticos e reprodutíveis do que um operador
+humano. Nos últimos anos, algumas metodologias foram desenvolvidos
+para realizar a caracterização mineralógica de minérios de ferro
+através de sistemas de análise de imagens.\cite{6,7,8,9}
+
+A grande maioria dos minérios de ferro brasileiros é essencialmente
+hematítica, geralmente envolvendo outros minerais como magnetita,
+goethita e minerais de ganga, principalmente quartzo. No entanto,
+estes minérios apresentam grande diversidade de microestruturas. A
+hematita, por exemplo, pode ser classificada como lobular, lamelar,
+granular, microcristalina ou martita.
+
+O tamanho, a forma e a distribuição dos cristais de hematita podem
+influenciar na redutibilidade e resistência mecânica dos
+aglomerados. Por exemplo, hematitas granular e lamelar aumentam a
+resistência mecânica dos aglomerados, mas reduzem sua porosidade e sua
+redutibilidade. Já a hematita martítica age no sentido oposto,
+aumentando a porosidade e redutibilidade dos aglomerados, mas
+reduzindo sua resistência mecânica.\cite{2,10,11} Assim, a
+determinação das características texturais da hematita certamente
+contribui para um melhor conhecimento dos minérios de ferro, abrindo
+novas possibilidades a fim de aprimorar seu processamento.\cite{12}
+
+A hematita é um mineral fortemente anisotrópico. Ela apresenta
+1pleocroísmo de reflexão (birrefletância), ou seja, sua refletância e,
+consequentemente, o seu brilho na imagem mudam com diferentes
+orientações dos cristais em relação ao plano de incidência da
+luz.\cite{5} Essa variação de brilho é sutil, mas é perceptível ao
+olho humano treinado no MLR.
+
+Por sua vez, o uso combinado de um polarizador e um analisador no MLR
+gera variações de brilho e cores devido à anisotropia.\cite{13} Esta
+abordagem pode ser usada para obter imagens que apresentam um
+contraste suficiente para diferençar os cristais.
+
+Como já constatado, os minérios de ferro podem ter uma estrutura muito
+complexa, com a associação de diferentes minerais e texturas. De tal
+modo, não é muito difícil imaginar que criar um algoritmo de análise
+de imagens capaz de identificar e caracterizar todas as formas de
+hematita é um grande desafio. Sendo assim, este trabalho tem como
+objetivo desenvolver uma metodologia de aquisição, processamento e
+análise de imagens no MLR para:
+
+\begin{enumerate}[label=(\roman{*})]
+  \item Segmentar cristais de hematita compacta (granular, lamelar e
+    lobular) no minério de ferro em amostras ricas neste mineral;
+  \item Medir tamanho de cristais de hematita compacta e;  
+  \item Medir os cristais de hematita compacta visando a sua
+    classificação segundo sua morfologia.
+\end{enumerate}
+
+O grupo de pesquisa em Microscopia Digital (MD) do DEMa/PUC-Rio está
+tentando desenvolver uma metodologia de classificação automática de
+tipos de hematita através de duas abordagens diferentes, analítica e
+sintética. A primeira é objeto de estudo deste trabalho, já a segunda
+será desenvolvida por outro integrante do grupo como parte da sua
+dissertação de mestrado.
+
+O método sintético consiste em empregar parâmetros de textura com o
+objetivo de identificar tipos texturais de hematita não compacta
+(martita e microcristalina). Com este fim, as imagens são analisadas
+em \textit{textels} (elementos de textura), dos quais são extraídos os
+parâmetros de textura. Estes parâmetros de textura são empregados como
+atributos no sistema de classificação.
+
+Por sua vez, o método analítico combina diversas imagens de um mesmo
+campo, obtidas com e sem polarização. A imagem sem polarização permite
+separar a hematita das demais fases, a partir de seu brilho. As
+imagens com polarização permitem encontrar as fronteiras entre os
+cristais de hematita. Uma vez separados os cristais de hematita, estes
+são medidos e classificados segundo sua morfologia.\cite{2,13}
+
+O método analítico tem como característica fundamental o
+reconhecimento individual de cada cristal de hematita, porém o método
+é ineficiente na identificação dos cristais das fases não compactas. É
+assim que o método sintético visa complementar esta deficiência,
+criando, no conjunto, uma metodologia de classificação automática dos
+cinco tipos de hematita.
+
+A presente tese está organizada em cinco capítulos. O primeiro
+capítulo consiste desta introdução.
+
+O segundo capítulo (``Revisão Bibliográfica") traz uma retrospectiva
+do minério de ferro, sua importância econômica, sua composição e sua
+microestrutura. Ao mesmo tempo, expõe o conteúdo teórico das diversas
+técnicas experimentais envolvidas no trabalho e descreve algumas
+técnicas que vêm sendo estudadas.
+
+O terceiro capítulo (``Materiais e Métodos") descreve o mecanismo de
+preparação das amostras de minério de ferro. Por sua vez, apresenta as
+etapas experimentais, assim como os equipamentos e técnicas usadas na
+análise destas amostras. Neste capítulo, são também descritas as
+técnicas de identificação, medição e classificação dos cristais de
+hematita.
+
+O quarto capítulo (``Resultados e Discussões") apresenta e discute os
+resultados. Neste capítulo, são expostas as vantagens e desvantagens
+de cada técnica experimental, assim como sua eficiência na
+identificação de cristais de hematita.
+
+Finalmente, o quinto capítulo (``Conclusões") apresenta as conclusões
+e propostas para trabalhos futuros.
+
+\textit{Cumpre comentar, nesta introdução, sobre uma característica um
+  tanto peculiar da estrutura do presente trabalho. Para atingir os
+  objetivos listados acima foram desenvolvidos diferentes métodos de
+  microscopia digital, envolvendo a criação de rotinas sofisticadas de
+  processamento e análise de imagens. Assim, parte dos métodos
+  "utilizados" foram, na verdade, "desenvolvidos" no decorrer do
+  trabalho. Por esta razão, os conteúdos dos capítulos de Materiais e
+  Métodos e de Resultados muitas vezes se misturam e retroalimentam,
+  gerando uma estrutura um tanto fora do padrão.}

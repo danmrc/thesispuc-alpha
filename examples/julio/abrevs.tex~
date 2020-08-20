@@ -1,0 +1,38 @@
+%% -*- coding: utf-8; -*-
+
+\begin{thenotations}
+
+  \noindent
+  \begin{tabular}{ll}
+    ADI -- Análise Digital de Imagens\\
+    BIF -- \textit{Banded Iron Formation}\\ 	
+    CCD -- \textit{Charge-Coupled Device}\\
+    CETEM -- Centro de Tecnologia Mineral\\
+    CPOL -- Polarização Circular\\
+    CRM -- Crescimento de Regiões Modificado \\
+    CW -- Canny-\textit{Watersheds} \\
+    DEMa -- Departamento de Engenharia de Materiais\\
+    FDA -- Análise Discriminante de Fisher\\
+    GPU -- \textit{Graphics Processing Unit}\\ 	
+    KLT -- Transformada de Karhunen-Loève\\
+    LDA -- Análise Discriminante Linear\\
+    LMD -- Laboratório de MD da PUC-Rio\\
+    LPOL -- Polarização Linear\\
+    CLUT -- \textit{Colour Look-Up table} (Tabela de visualização)\\
+    MCTI -- Ministério da Ciência, Tecnologia e Inovação\\
+    MD -- Microscopia Digital\\
+    MDE -- Mapa de Distâncias Euclidianas\\	
+    MDS -- Escalonamento Multidimensional\\
+    MLR -- Microscópio de Luz Refletida\\
+    PADI -- Processamento e Análise Digital de Imagens\\
+    PCA -- Análise de Componentes Principais\\
+    PDI -- Processamento Digital de Imagens\\
+    RGB -- Sistema de cores \textit{Red, Green, Blue}\\
+    SCT -- Setor de Caracterização Tecnológica\\
+    SIFT -- \textit{Scale Invariant Feature Transform}\\
+    SP -- Sem Polarização\\
+    TA -- Taxa de Acerto\\
+    UNCTAD -- Conferência das Nações Unidas para o Comércio e o Desenvolvimento\\
+  \end{tabular}
+
+\end{thenotations}

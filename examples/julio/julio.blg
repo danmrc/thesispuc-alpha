@@ -1,0 +1,46 @@
+This is BibTeX, Version 0.99d (TeX Live 2020/Arch Linux)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: julio.aux
+The style file: ThesisPUC.bst
+Database file #1: julio.bib
+You've used 125 entries,
+            1867 wiz_defined-function locations,
+            1142 strings with 23277 characters,
+and the built_in function-call counts, 28694 in all, are:
+= -- 3006
+> -- 504
+< -- 27
++ -- 251
+- -- 126
+* -- 1753
+:= -- 4091
+add.period$ -- 385
+call.type$ -- 125
+change.case$ -- 150
+chr.to.int$ -- 0
+cite$ -- 125
+duplicate$ -- 1592
+empty$ -- 2948
+format.name$ -- 126
+if$ -- 6460
+int.to.chr$ -- 0
+int.to.str$ -- 125
+missing$ -- 117
+newline$ -- 637
+num.names$ -- 127
+pop$ -- 415
+preamble$ -- 1
+purify$ -- 125
+quote$ -- 0
+skip$ -- 607
+stack$ -- 0
+substring$ -- 2135
+swap$ -- 605
+text.length$ -- 268
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 312
+width$ -- 128
+write$ -- 1423

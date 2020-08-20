@@ -1,0 +1,62 @@
+@c -*-texinfo-*-
+@c This is part of the ThesisPUC User Manual.
+@c Copyright (C) 2015 PUC-Rio
+@c See the file ThesisPUC.texi for copying conditions.
+
+@node Preface
+@unnumbered Preface
+
+This manual describes the use of the ThesisPUC latex document class to
+write phd or master thesis, as specified by the university
+PUC-RIO. @value{VERSION}.
+
+
+@menu
+* Authors::                
+* ThesisPUC License::
+@end menu
+
+
+@node Authors
+@unnumberedsec Authors of this Manual
+
+@itemize @bullet
+@item Thomas Lewiner (Departamento de Matemática)
+@item Marcelo Roberto Jimenez (CETUC)
+@item David Pirotte (MicDigit) <david@@altosw.be>
+@end itemize
+
+If you identify some errors in this manual, please write to the
+authors.
+
+
+@node ThesisPUC License
+@unnumberedsec ThesisPUC License
+@c @cindex copying
+@c @cindex GPL
+@cindex license
+
+The ThesisPUC latex document class is Free Software.  The ThesisPUC
+latex document class is copyrighted, not public domain, and there are
+restrictions on its distribution or redistribution.
+
+@itemize @bullet
+@item
+The ThesisPUC latex document class and supporting files are published
+under the terms of the GNU General Public License version 3 or later.
+See the file @file{LICENSE}.
+
+@item
+The manual you're now reading is published under the terms of the GNU
+Free Documentation License (@pxref{GNU Free Documentation License}).
+@end itemize
+
+You must be aware there is no warranty whatsoever for the ThesisPUC
+latex document class and any related files.  This is described in full
+in the licenses.
+
+
+@c Local Variables:
+@c TeX-master: "ThesisPUC.texi"
+@c ispell-local-dictionary: "american"
+@c End:

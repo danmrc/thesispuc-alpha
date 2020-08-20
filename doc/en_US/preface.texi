@@ -1,0 +1,76 @@
+@c -*- mode: texinfo; coding: utf-8 -*-
+@c This is part of the ThesisPUC User Manual.
+@c Copyright (C) 2015 - 2020 PUC-Rio
+@c See the file ThesisPUC.texi for copying conditions.
+
+@node Preface
+@unnumbered Preface
+
+This manual describes the use of the ThesisPUC @LaTeX{} document class. It
+relates particularly to ThesisPUC version @value{VERSION}.
+
+
+@menu
+* Contributors to this manual::
+* The ThesisPUC License::
+@end menu
+
+
+@node Contributors to this manual
+@unnumberedsec Contributors to this Manual
+
+The original manual edition contributors were:
+
+@itemize @bullet
+@item Thomas Lewiner (Departamento de Matemática)
+@item Marcelo Roberto Jimenez (CETUC)
+@end itemize
+
+The manual edition for ThesisPUC @LaTeX{} document class version 1.0.6 was a complete rewrite using
+@uref{@value{UTEXINFO}, Texinfo}. The contributors of that edition were:
+
+@itemize @bullet
+@item David Pirotte (MicDigi) <david@ at altosw dot be>
+@c @item Karen Agusto (MicDigi) <karenaugusto at yahoo.com.br>
+@c @item Julio Alvarez (MicDigi) <julioc.alvarez at gmail.com>
+@end itemize
+
+For this edition, and since manual editions for ThesisPUC @LaTeX{} document class version 1.0.7, the contributors are:
+
+@itemize @bullet
+@item Javier Guillot Jiménez (Departamento de Informática)
+@end itemize
+
+You are most welcome to join and help, send us an email.
+
+
+@node The ThesisPUC License
+@unnumberedsec The ThesisPUC License
+@cindex copying
+@cindex GPL
+@cindex license
+
+The ThesisPUC @LaTeX{} document class is Free Software.  The ThesisPUC
+@LaTeX{} document class is copyrighted, not public domain, and there are
+restrictions on its distribution or redistribution:
+
+@itemize @bullet
+@item
+The ThesisPUC @LaTeX{} document class and supporting files are published
+under the terms of the GNU General Public License version 3 or later.
+See the file @file{LICENSE}.
+
+@item
+This manual is published under the terms of the GNU Free Documentation
+License (@pxref{GNU Free Documentation License}).
+@end itemize
+
+You must be aware there is no warranty whatsoever for the ThesisPUC
+@LaTeX{} document class and any related files.  This is described in full
+in the licenses.
+
+
+@c Local Variables:
+@c TeX-master: "ThesisPUC.texi"
+@c ispell-local-dictionary: "american"
+@c End:

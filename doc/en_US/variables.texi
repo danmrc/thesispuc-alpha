@@ -1,0 +1,19 @@
+@c -*- mode: texinfo; coding: utf-8 -*-
+@c This is part of the ThesisPUC User Manual
+@c Copyright (C)  2015 - 2020 PUC-Rio
+@c See the file ThesisPUC.texi for copying conditions.
+
+
+@set TITLE ThesisPUC User Manual
+@set SUBTITLE PUC-Rio
+@c @set FULLTITLE @value{TITLE}@*@value{SUBTITLE}
+@set FULLTITLE @value{TITLE}
+
+@set MANUAL-REVISION 3
+
+@set UTHESISPUC-RELEASES http://www.puc-rio.br/ensinopesq/ccpg/apresentacao_ted.html
+@set UTHESISPUC-LATEST http://www.puc-rio.br/ensinopesq/ccpg/download/ThesisPUC-@value{VERSION}.zip
+
+@set UTEXINFO https://www.gnu.org/software/texinfo
+
+@set example-dir latex/examples
