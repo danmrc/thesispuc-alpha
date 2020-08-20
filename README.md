@@ -52,7 +52,7 @@ Por algum motivo os ambientes de Teorema, Prova, estavam em português mesmo qua
 
 Basicamente tudo que foi feito é adicionar um \ifelsethen no arquivo de estilo (`ThesisPUC.cls`) onde tem o comando `\bibliographystyle`.
 
-A segunda coisa (mais trabalhosa, mas mais fácil de reaproveitar), é o arquivo ThesisPUC2.bst. Esse arquivo define como o BibTeX escreve a bibliografia no arquivo. Ele é um tanto o quanto hermêtico, e se você quiser se entender com ele leia o [_Taming the BeaST_](http://tug.ctan.org/info/bibtex/tamethebeast/ttb_en.pdf) 
+A segunda coisa (mais trabalhosa, mas mais fácil de reaproveitar), é o arquivo ThesisPUC2.bst. Esse arquivo define como o BibTeX escreve a bibliografia no arquivo. Ele é um tanto o quanto hermêtico - usa notação polonesa reversa, como a HP12C, então somar 2 mais 2 é `2 2 +`. Se você quiser se entender com ele leia o [_Taming the BeaST_](http://tug.ctan.org/info/bibtex/tamethebeast/ttb_en.pdf) (sob sua conta e risco).
 
 ## Créditos e mais informações
 
