@@ -1,7 +1,7 @@
 # thesispuc-alpha
  Thesis PUC com suporte para bibliografia alfanumérico
 
-Esse é uma cópia do estilo de tese da PUC-Rio (disponível [aqui](http://www.puc-rio.br/ensinopesq/ccpg/apresentacao_ted.html)), mas com suporte para bibliografia no estilo sobrenome (ano) (ex.: Knuth (1984)), e mais umas pequenas alterações. 
+Esse é uma cópia do estilo de tese da PUC-Rio (disponível [aqui](http://www.puc-rio.br/ensinopesq/ccpg/apresentacao_ted.html)), mas com suporte para bibliografia no estilo sobrenome (ano) (ex.: Knuth (1984)), e mais umas pequenas alterações. É 100% projeto de fim de semana e não é oficial da PUC-Rio (só é baseado no estilo oficial). 
 
 Para baixar, clique no botão verde escrito _code_ e escolha a opção de baixar como um zip (ou faça pull se você usa o GitHub)
 
