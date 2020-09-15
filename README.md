@@ -5,6 +5,10 @@ Esse é uma cópia do estilo de tese da PUC-Rio (disponível [aqui](http://www.p
 
 Para baixar, clique no botão verde escrito _code_ e escolha a opção de baixar como um zip (ou faça pull se você usa o GitHub)
 
+### Notas de versão:
+
+Set/2020: não é mais exigido que você carregue manualmente o _natbib_ para o authordate. Isso pode quebrar gerar erros se você carrega manualmente o _natbib_. A solução é só tirar o `\usepackage[round]{natbib}` do seu arquivo `.tex`. (O manual de estilo da PUC nao prevê o uso de colchetes ou chaves para isolar o ano, então eu me sinto mais ou menos confortável de impor isso no arquivo).
+
 ## Como usar
 
 Baixe esse estilo e use exatamente como o estilo da PUC.
@@ -17,8 +21,6 @@ Agora, no comando `\documentclass`, você deve escolher uma das duas opções (a
 * _authordate_, para a bibliografia no estilo sobrenome (ano)
 
 ### Importante:
-
-* **No caso de _authordate_, você tem que adicionar o pacote `natbib` (use a opção round para o ano em parênteses). No caso da opção _numeric_ você não pode usar o natbib.**
 
 * **Em alguns sistemas, quando você trocar de numeric para authordate, você vai ter que apagar o arquivo `nome_da_tese.bbl` para o LaTeX atualizar a bibliografia**
  

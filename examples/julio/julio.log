@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2020.7.5)  20 AUG 2020 15:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2020.8.25)  15 SEP 2020 12:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2437,10 +2437,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 303.
  ) 
 Here is how much of TeX's memory you used:
- 12136 strings out of 480478
- 175714 string characters out of 5905960
- 548372 words of memory out of 5000000
- 27389 multiletter control sequences out of 15000+600000
+ 12135 strings out of 480478
+ 175697 string characters out of 5905959
+ 546872 words of memory out of 5000000
+ 27388 multiletter control sequences out of 15000+600000
  644803 words of font info for 84 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
  48i,22n,61p,424b,505s stack positions out of 5000i,500n,10000p,200000b,80000s

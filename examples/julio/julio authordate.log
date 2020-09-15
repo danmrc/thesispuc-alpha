@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2020.7.5)  20 AUG 2020 15:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2020.8.25)  15 SEP 2020 12:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -372,43 +372,50 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip106
 )
-\puc@topmargin@text=\skip107
-\puc@bottommargin@text=\skip108
-\puc@leftmargin@text=\skip109
-\puc@rightmargin@text=\skip110
-\puc@textwidth@text=\skip111
-\puc@oddsidemargin@text=\skip112
-\puc@evensidemargin@text=\skip113
-\puc@textheight@text=\skip114
-\puc@headsep@text=\skip115
-\puc@topmargin@cover=\skip116
-\puc@bottommargin@cover=\skip117
-\puc@leftmargin@cover=\skip118
-\puc@rightmargin@cover=\skip119
-\puc@textwidth@cover=\skip120
-\puc@oddsidemargin@cover=\skip121
-\puc@evensidemargin@cover=\skip122
-\puc@textheight@cover=\skip123
-\puc@headsep@cover=\skip124
-\puc@topmargin@front=\skip125
-\puc@bottommargin@front=\skip126
-\puc@leftmargin@front=\skip127
-\puc@rightmargin@front=\skip128
-\puc@textwidth@front=\skip129
-\puc@oddsidemargin@front=\skip130
-\puc@evensidemargin@front=\skip131
-\puc@textheight@front=\skip132
-\puc@headsep@front=\skip133
-\puc@topmargin@dedication=\skip134
-\puc@bottommargin@dedication=\skip135
-\puc@leftmargin@dedication=\skip136
-\puc@rightmargin@dedication=\skip137
-\puc@textwidth@dedication=\skip138
-\puc@oddsidemargin@dedication=\skip139
-\puc@evensidemargin@dedication=\skip140
-\puc@textheight@dedication=\skip141
-\puc@headsep@dedication=\skip142
-\c@definition=\count194
+(/usr/share/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip107
+\bibsep=\skip108
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count194
+)
+\puc@topmargin@text=\skip109
+\puc@bottommargin@text=\skip110
+\puc@leftmargin@text=\skip111
+\puc@rightmargin@text=\skip112
+\puc@textwidth@text=\skip113
+\puc@oddsidemargin@text=\skip114
+\puc@evensidemargin@text=\skip115
+\puc@textheight@text=\skip116
+\puc@headsep@text=\skip117
+\puc@topmargin@cover=\skip118
+\puc@bottommargin@cover=\skip119
+\puc@leftmargin@cover=\skip120
+\puc@rightmargin@cover=\skip121
+\puc@textwidth@cover=\skip122
+\puc@oddsidemargin@cover=\skip123
+\puc@evensidemargin@cover=\skip124
+\puc@textheight@cover=\skip125
+\puc@headsep@cover=\skip126
+\puc@topmargin@front=\skip127
+\puc@bottommargin@front=\skip128
+\puc@leftmargin@front=\skip129
+\puc@rightmargin@front=\skip130
+\puc@textwidth@front=\skip131
+\puc@oddsidemargin@front=\skip132
+\puc@evensidemargin@front=\skip133
+\puc@textheight@front=\skip134
+\puc@headsep@front=\skip135
+\puc@topmargin@dedication=\skip136
+\puc@bottommargin@dedication=\skip137
+\puc@leftmargin@dedication=\skip138
+\puc@rightmargin@dedication=\skip139
+\puc@textwidth@dedication=\skip140
+\puc@oddsidemargin@dedication=\skip141
+\puc@evensidemargin@dedication=\skip142
+\puc@textheight@dedication=\skip143
+\puc@headsep@dedication=\skip144
+\c@definition=\count195
 )
 (/usr/share/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
@@ -419,8 +426,8 @@ Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
 \ar@mcellbox=\box46
 \extrarowheight=\dimen150
 \NC@list=\toks20
-\extratabsurround=\skip143
-\backup@length=\skip144
+\extratabsurround=\skip145
+\backup@length=\skip146
 \ar@cellbox=\box47
 )
 \TX@col@width=\dimen151
@@ -428,32 +435,32 @@ Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
 \TX@old@col=\dimen153
 \TX@target=\dimen154
 \TX@delta=\dimen155
-\TX@cols=\count195
+\TX@cols=\count196
 \TX@ftn=\toks21
 )
 (/usr/share/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
-\multirow@colwidth=\skip145
-\multirow@cntb=\count196
-\multirow@dima=\skip146
+\multirow@colwidth=\skip147
+\multirow@cntb=\count197
+\multirow@dima=\skip148
 \bigstrutjot=\dimen156
 )
 (/usr/share/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
-\c@tracingmulticols=\count197
+\c@tracingmulticols=\count198
 \mult@box=\box48
 \multicol@leftmargin=\dimen157
-\c@unbalance=\count198
-\c@collectmore=\count199
-\doublecol@number=\count266
-\multicoltolerance=\count267
-\multicolpretolerance=\count268
+\c@unbalance=\count199
+\c@collectmore=\count266
+\doublecol@number=\count267
+\multicoltolerance=\count268
+\multicolpretolerance=\count269
 \full@width=\dimen158
 \page@free=\dimen159
 \premulticols=\dimen160
 \postmulticols=\dimen161
-\multicolsep=\skip147
-\multicolbaselineskip=\skip148
+\multicolsep=\skip149
+\multicolbaselineskip=\skip150
 \partial@page=\box49
 \last@line=\box50
 \maxbalancingoverflow=\dimen162
@@ -498,15 +505,15 @@ Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
 \@tempa=\box89
 \@tempa=\box90
 \@tempa=\box91
-\c@minrows=\count269
-\c@columnbadness=\count270
-\c@finalcolumnbadness=\count271
+\c@minrows=\count270
+\c@columnbadness=\count271
+\c@finalcolumnbadness=\count272
 \last@try=\dimen163
 \multicolovershoot=\dimen164
 \multicolundershoot=\dimen165
 \mult@nat@firstbox=\box92
 \colbreak@box=\box93
-\mc@col@check@num=\count272
+\mc@col@check@num=\count273
 )
 (/usr/share/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
@@ -520,7 +527,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 Package color Info: Driver file: pdftex.def on input line 147.
 )
 \everycr=\toks22
-\minrowclearance=\skip149
+\minrowclearance=\skip151
 )
 (/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
@@ -555,23 +562,23 @@ File: x11nam.def 2016/05/11 v2.12 Predefined colors according to Unix/X11 (UK)
 ))
 (/usr/share/texmf-dist/tex/latex/numprint/numprint.sty
 Package: numprint 2012/08/20 v1.39 Print numbers (HH)
-\c@nprt@mantissa@digitsbefore=\count273
-\c@nprt@mantissa@digitsafter=\count274
-\c@nprt@exponent@digitsbefore=\count275
-\c@nprt@exponent@digitsafter=\count276
-\nprt@digitwidth=\skip150
-\nprt@sepwidth=\skip151
-\nprt@decimalwidth=\skip152
-\nprt@blockwidth=\skip153
+\c@nprt@mantissa@digitsbefore=\count274
+\c@nprt@mantissa@digitsafter=\count275
+\c@nprt@exponent@digitsbefore=\count276
+\c@nprt@exponent@digitsafter=\count277
+\nprt@digitwidth=\skip152
+\nprt@sepwidth=\skip153
+\nprt@decimalwidth=\skip154
+\nprt@blockwidth=\skip155
 \nprt@digittoks=\toks23
 \nprt@pretoks=\toks24
 \nprt@posttoks=\toks25
-\nprt@thisdigit=\count277
-\nprt@curpos=\count278
-\nprt@rndpos=\count279
-\c@nprt@digitsfirstblock=\count280
-\c@nprt@blockcnt=\count281
-\c@nprt@cntprint=\count282
+\nprt@thisdigit=\count278
+\nprt@curpos=\count279
+\nprt@rndpos=\count280
+\c@nprt@digitsfirstblock=\count281
+\c@nprt@blockcnt=\count282
+\c@nprt@cntprint=\count283
 
 No configuration file `numprint.cfg' found.)
 (/usr/share/texmf-dist/tex/latex/base/textcomp.sty
@@ -589,17 +596,17 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \cmidrulesep=\dimen173
 \cmidrulekern=\dimen174
 \defaultaddspace=\dimen175
-\@cmidla=\count283
-\@cmidlb=\count284
+\@cmidla=\count284
+\@cmidlb=\count285
 \@aboverulesep=\dimen176
 \@belowrulesep=\dimen177
-\@thisruleclass=\count285
-\@lastruleclass=\count286
+\@thisruleclass=\count286
+\@lastruleclass=\count287
 \@thisrulewidth=\dimen178
 )
 (/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2020/01/20 v2.17e AMS math features
-\@mathmargin=\skip154
+\@mathmargin=\skip156
 
 For additional information on amsmath, use the `?' option.
 (/usr/share/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -617,13 +624,13 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 (/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count287
+\inf@bad=\count288
 LaTeX Info: Redefining \frac on input line 227.
-\uproot@=\count288
-\leftroot@=\count289
+\uproot@=\count289
+\leftroot@=\count290
 LaTeX Info: Redefining \overline on input line 389.
-\classnum@=\count290
-\DOTSCASE@=\count291
+\classnum@=\count291
+\DOTSCASE@=\count292
 LaTeX Info: Redefining \ldots on input line 486.
 LaTeX Info: Redefining \dots on input line 489.
 LaTeX Info: Redefining \cdots on input line 610.
@@ -632,15 +639,15 @@ LaTeX Info: Redefining \cdots on input line 610.
 \big@size=\dimen181
 LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
-\macc@depth=\count292
-\c@MaxMatrixCols=\count293
+\macc@depth=\count293
+\c@MaxMatrixCols=\count294
 \dotsspace@=\muskip17
-\c@parentequation=\count294
-\dspbrk@lvl=\count295
+\c@parentequation=\count295
+\dspbrk@lvl=\count296
 \tag@help=\toks27
-\row@=\count296
-\column@=\count297
-\maxfields@=\count298
+\row@=\count297
+\column@=\count298
+\maxfields@=\count299
 \andhelp@=\toks28
 \eqnshift@=\dimen182
 \alignsep@=\dimen183
@@ -649,30 +656,23 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
 \totwidth@=\dimen186
 \lineht@=\dimen187
 \@envbody=\toks29
-\multlinegap=\skip155
-\multlinetaggap=\skip156
+\multlinegap=\skip157
+\multlinetaggap=\skip158
 \mathdisplay@stack=\toks30
 LaTeX Info: Redefining \[ on input line 2859.
 LaTeX Info: Redefining \] on input line 2860.
 )
 (/usr/share/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
-\labelindent=\skip157
+\labelindent=\skip159
 \enit@outerparindent=\dimen188
 \enit@toks=\toks31
 \enit@inbox=\box96
-\enit@count@id=\count299
-\enitdp@description=\count300
+\enit@count@id=\count300
+\enitdp@description=\count301
 )
 (/usr/share/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
-)
-(/usr/share/texmf-dist/tex/latex/natbib/natbib.sty
-Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip158
-\bibsep=\skip159
-LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count301
 ) (./defs.tex)
 (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-06-03 L3 backend support: PDF mode
@@ -690,24 +690,24 @@ LaTeX Warning: Label `eq-ellpol' multiply defined.
 LaTeX Warning: Label `eq-meadclass' multiply defined.
 
 )
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 292.
-LaTeX Font Info:    ... okay on input line 292.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 292.
-LaTeX Font Info:    ... okay on input line 292.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 292.
-LaTeX Font Info:    ... okay on input line 292.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 292.
-LaTeX Font Info:    ... okay on input line 292.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 292.
-LaTeX Font Info:    ... okay on input line 292.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 292.
-LaTeX Font Info:    ... okay on input line 292.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 292.
-LaTeX Font Info:    ... okay on input line 292.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 292.
-LaTeX Font Info:    ... okay on input line 292.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 291.
+LaTeX Font Info:    ... okay on input line 291.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 291.
+LaTeX Font Info:    ... okay on input line 291.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 291.
+LaTeX Font Info:    ... okay on input line 291.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 291.
+LaTeX Font Info:    ... okay on input line 291.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 291.
+LaTeX Font Info:    ... okay on input line 291.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 291.
+LaTeX Font Info:    ... okay on input line 291.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 291.
+LaTeX Font Info:    ... okay on input line 291.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 291.
+LaTeX Font Info:    ... okay on input line 291.
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 29
-2.
+1.
  (/usr/share/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -726,16 +726,8 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 \everyMPtoPDFconversion=\toks33
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-
-(/usr/share/texmf-dist/tex/latex/grfext/grfext.sty
-Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
-)
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 504.
 
 (/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
@@ -743,9 +735,9 @@ e
 ))
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 292.
+(lastpage)             ! on input line 291.
 \AtBeginShipoutBox=\box99
-Package hyperref Info: Link coloring ON on input line 292.
+Package hyperref Info: Link coloring ON on input line 291.
 
 (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -758,14 +750,14 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count309
 )
-LaTeX Info: Redefining \ref on input line 292.
-LaTeX Info: Redefining \pageref on input line 292.
-LaTeX Info: Redefining \nameref on input line 292.
+LaTeX Info: Redefining \ref on input line 291.
+LaTeX Info: Redefining \pageref on input line 291.
+LaTeX Info: Redefining \nameref on input line 291.
 
 (./julio authordate.out) (./julio authordate.out)
 \@outlinefile=\write3
 LaTeX Font Info:    Trying to load font information for T1+lmss on input line 2
-92.
+91.
 
 (/usr/share/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -773,45 +765,45 @@ File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 <puc.png, id=120, 405.14561pt x 94.24008pt>
 File: puc.png Graphic file (type png)
 <use puc.png>
-Package pdftex.def Info: puc.png  used on input line 292.
+Package pdftex.def Info: puc.png  used on input line 291.
 (pdftex.def)             Requested size: 269.10934pt x 62.59596pt.
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
-92.
+91.
 
 (/usr/share/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
-92.
+91.
 
 (/usr/share/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-292.
+291.
 
 (/usr/share/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-292.
+291.
 
 (/usr/share/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 292.
+(Font)              <12> on input line 291.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 292.
+(Font)              <8> on input line 291.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 292.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 292
+(Font)              <6> on input line 291.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 291
 .
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 292
+LaTeX Font Info:    Trying to load font information for U+msb on input line 291
 .
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -824,7 +816,7 @@ Non-PDF special ignored!
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./puc.png (PNG copy)>]
 File: puc.png Graphic file (type png)
 <use puc.png>
-Package pdftex.def Info: puc.png  used on input line 292.
+Package pdftex.def Info: puc.png  used on input line 291.
 (pdftex.def)             Requested size: 269.10934pt x 62.59596pt.
 
 [2
@@ -833,7 +825,7 @@ Package pdftex.def Info: puc.png  used on input line 292.
 \c@keycount=\count310
 
 
-Package hyperref Warning: Ignoring empty anchor on input line 292.
+Package hyperref Warning: Ignoring empty anchor on input line 291.
 
 [3
 
@@ -868,7 +860,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--11
  [10
 
 ] (./abrevs.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 4--293
+Underfull \hbox (badness 10000) in paragraph at lines 4--292
 
  []
 
@@ -2448,11 +2440,11 @@ AED: lastpage setting LastPage
 [86
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 304.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 304.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 303.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 303.
  (./julio authordate.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 304.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 304.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 303.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 303.
 Package rerunfilecheck Info: File `"julio authordate".out' has not changed.
 (rerunfilecheck)             Checksum: 37128990F0D7523B95048B1E3F86F377;2291.
 
@@ -2465,13 +2457,13 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 304.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 303.
  ) 
 Here is how much of TeX's memory you used:
- 12728 strings out of 480478
- 183568 string characters out of 5905960
- 549434 words of memory out of 5000000
- 27971 multiletter control sequences out of 15000+600000
+ 12700 strings out of 480478
+ 182970 string characters out of 5905959
+ 548732 words of memory out of 5000000
+ 27947 multiletter control sequences out of 15000+600000
  644803 words of font info for 84 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
  48i,22n,61p,437b,713s stack positions out of 5000i,500n,10000p,200000b,80000s

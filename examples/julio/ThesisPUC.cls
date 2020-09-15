@@ -201,6 +201,10 @@
   bookmarksnumbered=false%
 ]{hyperref}
 
+\ifthenelse{\boolean{puc@authordate}}
+{\RequirePackage[round]{natbib}}
+{}
+
 %% \makeatletter
 
 
