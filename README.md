@@ -34,8 +34,6 @@ Só para ficar absolutamente claro: se você está fazendo uma tese de mestrado 
 
 \documentclass[american,master,authordate]{ThesisPUC}
 
-\usepackage[round]{natbib}
-
 ```
 
 No caso de bibliografia numérica:
