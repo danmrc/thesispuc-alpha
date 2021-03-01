@@ -7,11 +7,23 @@ Para baixar, clique no botão verde escrito _code_ e escolha a opção de baixar
 
 ### Notas de versão:
 
-Set/2020: não é mais exigido que você carregue manualmente o _natbib_ para o authordate. Isso pode quebrar gerar erros se você carrega manualmente o _natbib_. A solução é só tirar o `\usepackage[round]{natbib}` do seu arquivo `.tex`. (O manual de estilo da PUC nao prevê o uso de colchetes ou chaves para isolar o ano, então eu me sinto mais ou menos confortável de impor isso no arquivo).
+Set/2020: não é mais exigido que você carregue manualmente o _natbib_ para o authordate. Isso pode gerar erros se você carrega manualmente o _natbib_. A solução é só tirar o `\usepackage[round]{natbib}` do seu arquivo `.tex`. (O manual de estilo da PUC nao prevê o uso de colchetes ou chaves para isolar o ano, então eu me sinto mais ou menos confortável de impor isso no arquivo).
 
 ## Como usar
 
 Baixe esse estilo e use exatamente como o estilo da PUC.
+
+### Overleaf
+
+Se você quiser usar no overleaf, faça upload para o seu projeto dos seguintes arquivos:
+
+* ThesisPUC.bst
+* ThesisPUC2.bst
+* ThesisPUC.cls
+* atbeginend.sty
+* puc.png
+
+(Teoricamente você só precia disso em qualquer caso) Isso pode gerar alguns erros, mas gera um pdf corretamente. 
 
 ## Bibliografia
 
