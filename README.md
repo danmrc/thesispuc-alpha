@@ -7,6 +7,8 @@ Para baixar, clique no botão verde escrito _code_ e escolha a opção de baixar
 
 ### Notas de versão:
 
+Abr/2021: A bibliografia alfanumérica agora organiza corretamente em ordem alfabética do sobrenome do autor/ano na Bibliografia (bug reportado pelo Arthur)
+
 Set/2020: não é mais exigido que você carregue manualmente o _natbib_ para o authordate. Isso pode gerar erros se você carrega manualmente o _natbib_. A solução é só tirar o `\usepackage[round]{natbib}` do seu arquivo `.tex`. (O manual de estilo da PUC nao prevê o uso de colchetes ou chaves para isolar o ano, então eu me sinto mais ou menos confortável de impor isso no arquivo).
 
 ## Como usar

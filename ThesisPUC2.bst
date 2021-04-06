@@ -349,7 +349,7 @@ FUNCTION {format.edition}
   if$
 }
 
-INTEGERS { multiresult }
+INTEGERS { multiresult}
 
 FUNCTION {multi.page.check}
 { 't :=
@@ -912,6 +912,38 @@ MACRO {tcs} {"Theoretical Comput. Sci."}
 
 READ
 
+INTEGERS{ key }
+
+FUNCTION {any.sort}
+{ author empty$
+  { organization empty$
+    { editor empty$
+      { title empty$
+        { key empty$
+          { "para ordenar, precisa dos campos author, organization, editor, title ou key in " cite$ * warning$ ""}
+          { key sortify }
+        if$}
+        { title sortify}
+      if$}
+      { editor sort.format.names }
+    if$}
+    { organization sortify }
+  if$}
+  { author sort.format.names }
+if$
+}
+
+FUNCTION {presort}
+{ 
+ any.sort
+  "    " * year field.or.null sortify * "    " * title field.or.null
+  sort.format.title * #1 entry.max$ substring$
+  %for non-alpha style we drop a void sort.key such that SORT has no effect
+  key 'skip$ {pop$ ""} if$ 'sort.key$ :=
+  year empty$ {""} {year} if$ 'year.label :=
+  calc.extended.label
+}
+
 FUNCTION {sortify}
 { purify$
   "l" change.case$
@@ -929,20 +961,6 @@ FUNCTION {chop.word}
   if$
 }
 
-FUNCTION {presort}
-{
-  %% the following code assumes key text.length$ <= #3
-  key purify$
-  duplicate$ text.length$ #1 =
-    { "00" swap$ * }
-    { duplicate$ text.length$ #2 =
-	{ "0" swap$ * }
-	{ "" swap$ * }
-      if$
-    }
-  if$
-  'sort.key$ :=
-}
 
 ITERATE {presort}
 
